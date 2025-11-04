@@ -29,7 +29,6 @@ import frame109 from "./essay 4.svg";
 import frame110 from "./essay 5.svg";
 import frame111 from "./essay 3.svg";
 import frame112 from "./essay6.svg";
-import video from "./video3481600811.mp4";
 import goldicon1 from "./goldicon1.svg";
 import goldicon2 from "./goldicon2.svg";
 

@@ -5,23 +5,25 @@ interface Props {
   id: string;
   title: string;
   description?: string;
-  descriptionKo?: string;
+  description5?: string; // ✅ 추가
 }
 
 const ProjectDetailMediaSection: React.FC<Props> = ({
   id,
   title,
   description,
-  descriptionKo,
+  description5, // ✅ 구조 분해 추가
+
 }) => {
   if (id === "3") {
     return (
       <ProjectDetailMedia
-        video="/videos/video3481600811.mp4"
+        video="https://player.vimeo.com/video/1125201347?badge=0&autopause=0&player_id=0&app_id=58479"
         svgs={["/images/image144.svg", "/images/Group569.svg"]}
         title={title}
         description={"hello"}
-        descriptionKo={"미국"}
+        description5={description5 || ""}
+
       />
     );
   }
@@ -29,11 +31,12 @@ const ProjectDetailMediaSection: React.FC<Props> = ({
   if (id === "4") {
     return (
       <ProjectDetailMedia
-        video="/videos/video3481600811.mp4"
+        video="https://player.vimeo.com/video/1124760235?h=8e72d8e123&badge=0&autopause=0&player_id=0&app_id=58479"
         svgs={["/images/Frame 30.svg", "/images/frame34.svg"]}
         title={title}
         description={"hi"}
-        descriptionKo={"아난"}
+        description5={description5 || ""}
+
       />
     );
   }
@@ -41,11 +44,12 @@ const ProjectDetailMediaSection: React.FC<Props> = ({
     if (id === "5") {
     return (
       <ProjectDetailMedia
-        video="/videos/video3481600811 복사본.mp4"
+        video="https://player.vimeo.com/video/1124735859?badge=0&autopause=0&player_id=0&app_id=58479"
         svgs={["/images/Frame 30.svg", "/images/frame34.svg"]}
         title={title}
         description={"you"}
-        descriptionKo={"슬퍼"}
+        description5={description5 || "This"}
+
       />
     );
   }

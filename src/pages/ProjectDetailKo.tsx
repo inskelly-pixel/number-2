@@ -114,7 +114,8 @@ const ProjectDetailKo = () => {
         <ProjectDetailMediaSection
           id={String(project.id)}
           title={project.title}
-          description={project.description3}
+          description5={project.description5} // ✅ 추가
+
         />
       </main>
     </div>
