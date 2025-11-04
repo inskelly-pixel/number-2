@@ -20,7 +20,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white text-black font-helvetica">
       {/* Header */}
-      <header className="container mx-auto px-6 py-12">
+      <header className="container mx-auto px-10 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {/* Left */}
           <div className="space-y-1">
@@ -77,18 +77,18 @@ const Index = () => {
         </p>
 
         {/* 선(Line)들 (z-0) */}
-        <div className="absolute top-[12%] left-[3%] w-[32%] h-[2.5px] bg-black z-0" />
-        <div className="absolute top-[95%] left-[3%] w-[80%] h-[2.5px]  bg-black z-0" />
-        <div className="absolute top-[30%] left-[32.5%] w-[44%] h-[2.5px]  bg-black z-0" />
+        <div className="absolute top-[12%] left-[3%] w-[32%] h-[2.5px] bg-gray-500 z-0" />
+        <div className="absolute top-[95%] left-[3%] w-[80%] h-[2.5px]  bg-gray-500 z-0" />
+        <div className="absolute top-[30%] left-[32.5%] w-[44%] h-[2.5px]  bg-gray-500 z-0" />
         <div className="absolute top-[30%] left-[4%] w-[15.5%] h-[2.5px]  bg-gray-400 z-0" />
-        <div className="absolute top-[54%] right-[1.3%] w-[25%] h-[2.5px]  bg-black z-0" />
-        <div className="absolute top-[95%] right-[1.3%] w-[8%] h-[2.5px]  bg-black z-0" />
+        <div className="absolute top-[54%] right-[1.3%] w-[25%] h-[2.5px]  bg-gray-500 z-0" />
+        <div className="absolute top-[95%] right-[1.3%] w-[8%] h-[2.5px]  bg-gray-500 z-0" />
 
         <div className="absolute top-[40.2%] left-[13.9%] w-[11%] h-[2.5px] rotate-90   bg-gray-400 z-0" />
-        <div className="absolute top-[43.1%] left-[68%] w-[11.6%] h-[2.5px] rotate-90  bg-black z-0" />
-        <div className="absolute top-[53.5%] left-[-19.1%] w-[44.4%] h-[2.5px] rotate-90  bg-black z-0" />
-        <div className="absolute top-[74.5%] left-[87%] w-[19.5%] h-[2.5px] rotate-90  bg-black z-0" />
-        <div className="absolute top-[22%] left-[28.4%] w-[8.4%] h-[2.5px] rotate-90  bg-black z-0" />
+        <div className="absolute top-[43.1%] left-[68%] w-[11.6%] h-[2.5px] rotate-90  bg-gray-500 z-0" />
+        <div className="absolute top-[53.5%] left-[-19.1%] w-[44.4%] h-[2.5px] rotate-90  bg-gray-500 z-0" />
+        <div className="absolute top-[74.5%] left-[87%] w-[19.5%] h-[2.5px] rotate-90  bg-gray-500 z-0" />
+        <div className="absolute top-[22%] left-[28.4%] w-[8.4%] h-[2.5px] rotate-90  bg-gray-500 z-0" />
 
         {/* 십자가 기준선 (z-0) */}
         <div className="absolute left-[24.2%] bottom-[40%] w-0 h-0">

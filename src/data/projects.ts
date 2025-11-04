@@ -25,6 +25,10 @@ import frame105 from "./Frame105.svg";
 import frame106 from "./Frame 106.svg";
 import frame107 from "./essay1.svg";
 import frame108 from "./essay2.svg";
+import frame109 from "./essay 4.svg";
+import frame110 from "./essay 5.svg";
+import frame111 from "./essay 3.svg";
+import frame112 from "./essay6.svg";
 import video from "./video3481600811.mp4";
 import goldicon1 from "./goldicon1.svg";
 import goldicon2 from "./goldicon2.svg";
@@ -113,8 +117,9 @@ export const projects = [
     icons: [goldicon1, goldicon2], // 상단 아이콘
     category: "Video design",
     description: "When countless voices overlap and gather, they grow large enough to form a single space. Sound, in this way, carries the qualities of resonance and movement. ", 
-    description2: "To express this movement of sound, I layered whispering noises to create an audio composition and visualized it through motion graphics."},
-
+    description2: "To express this movement of sound, I layered whispering noises to create an audio composition and visualized it through motion graphics.",
+    description3: "dkdk"
+  },
 
 
   { id: 6, 
@@ -421,7 +426,7 @@ export const projects = [
     title: "Art History Documents", 
     year: 2025, position: { top: 10, left: 32 },
     icons: [goldicon1, goldicon2],  
-    images: [frame107, frame108],
+    images: [frame107, frame108, frame109, frame111, frame110, frame112],
     category: "Art History Essay",
     description: "Lumi is a media application designed to help users record and recognize sensory distance in their daily lives. Unlike social media platforms that emphasize physical proximity or fast-paced connections, Lumi aims to foster more sustainable relationships. By recording emotional and sensory interactions beyond physical distance,", 
     description2: "users can better perceive the depth of their connections. Lumi provides an environment that encourages users to focus on the relationships that truly matter — whether in love, work, or everyday life. The project focused on designing essential features through service planning, PDI user research, and concept implementation.",

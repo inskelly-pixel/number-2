@@ -5,6 +5,7 @@ interface ProjectDetailMediaProps {
   title: string;
   description?: string;     // 영어 설명
   descriptionKo?: string;   // 한글 설명
+  description3: string;
   svgs?: string[];          // SVG 배열
 }
 
@@ -30,6 +31,7 @@ const ProjectDetailMedia: React.FC<ProjectDetailMediaProps> = ({
       {(descriptionKo || description) && (
         <div className="mt-4 ml-auto w-[460px] text-left mr-[50px] mb-12">
           <p className="text-md text-muted-foreground leading-relaxed">
+             description3= "dkf"
             {descriptionKo || description}
           </p>
         </div>
