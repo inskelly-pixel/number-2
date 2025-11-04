@@ -35,7 +35,5 @@ dist-ssr/
 
 # Project large files
 /public/videos/*
-/src/data/*.svg
-/src/videos/*
 /dist/videos/*
 /dist/assets/*.svg
