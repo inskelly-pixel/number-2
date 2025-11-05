@@ -37,3 +37,6 @@ dist-ssr/
 /public/videos/*
 /dist/videos/*
 /dist/assets/*.svg
+
+localhost.pem
+localhost-key.pem
