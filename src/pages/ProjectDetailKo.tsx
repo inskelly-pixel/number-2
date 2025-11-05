@@ -41,20 +41,20 @@ const ProjectDetailKo = () => {
 
         <div className="mt-16 flex flex-col gap-18">
           <div className="flex flex-row gap-8 items-start">
-            <div className="ml-2 space-y-1 w-[200px]">
+            <div className="ml-5 space-y-1 w-[200px]">
               <h1 className="text-xl font-normal">{project.title}</h1>
               <p className="text-md text-muted-foreground">{project.year}</p>
             </div>
             <div className="flex flex-row gap-6 w-[1000px]">
               <div className="space-y-1 w-[460px]">
                 <h2 className="text-md font-normal">{project.category}</h2>
-                <p className="text-md text-muted-foreground leading-7">
+                <p className="text-md text-muted-foreground leading-[1.8]">
                   {project.description3}
                 </p>
               </div>
               <div className="space-y-1 w-[460px]">
                 <h2 className="text-md font-normal invisible">kkk</h2>
-                <p className="text-md text-muted-foreground leading-7">
+                <p className="text-md text-muted-foreground leading-[1.8]">
                   {project.description4}
                 </p>
               </div>
@@ -69,8 +69,9 @@ const ProjectDetailKo = () => {
       </header>
 
       {/* Project Images + Media */}
-      <main className="px-4 md:px-6 py-12 flex flex-col gap-6">
-        <div className="flex flex-col gap-4">
+      <main className="px-4 md:px-6 py-12 flex flex-col gap-32 relative">
+        {/* 이미지 렌더링 */}
+        <div className="flex flex-col gap-32">
           {project.images.map((image, index) => (
             <div key={index} className="relative w-full">
               <img
@@ -78,44 +79,47 @@ const ProjectDetailKo = () => {
                 alt={`${project.title} - 이미지 ${index + 1}`}
                 className="w-full h-auto object-contain"
               />
-
-              {/* textSets 기반 세로 배치 / 문단 형태 */}
-              {project.textSets?.map((textSet, tsIndex) => {
-                if (!textSet.title && (!textSet.texts || textSet.texts.length === 0))
-                  return null;
-
-                return (
-                  <div
-                    key={tsIndex}
-                    className="absolute flex flex-col items-start p-3 text-sm rounded-lg max-w-[40%] z-50"
-                    style={{
-                      bottom: textSet.position?.bottom,
-                      left: textSet.position?.left,
-                      color: textSet.color || "white", // ✅ 색상 반영
-                    }}
-                  >
-                    {textSet.title && (
-                      <span className="text-lg font-semibold mb-2">
-                        {textSet.title}
-                      </span>
-                    )}
-                    {textSet.texts?.map((txt, i) => (
-                      <p key={i} className="mb-1 whitespace-pre-line leading-7">
-                        {txt}
-                      </p>
-                    ))}
-                  </div>
-                );
-              })}
             </div>
           ))}
         </div>
 
+        {/* textSets: 이미지와 독립적으로 위치 */}
+        {project.textSets?.map((textSet, tsIndex) => {
+          if (!textSet.title && (!textSet.texts || textSet.texts.length === 0))
+            return null;
+
+          return (
+            <div
+              key={tsIndex}
+              className="absolute flex flex-col items-start p-3 text-sm rounded-lg z-50"
+              style={{
+                top: textSet.position?.top,
+                left: textSet.position?.left,
+                color: textSet.color || "white",
+                width: textSet.width || "auto",
+              }}
+            >
+              {textSet.title && (
+                <span className="text-lg font-semibold mb-2">
+                  {textSet.title}
+                </span>
+              )}
+              {textSet.texts?.map((txt, i) => (
+                <p
+                  key={i}
+                  className="mb-1 whitespace-pre-line leading-[1.9]"
+                >
+                  {txt}
+                </p>
+              ))}
+            </div>
+          );
+        })}
+
         <ProjectDetailMediaSection
           id={String(project.id)}
           title={project.title}
-          description5={project.description5} // ✅ 추가
-
+          description5={project.description5}
         />
       </main>
     </div>

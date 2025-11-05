@@ -7,8 +7,6 @@ import frame36 from "./frame36.svg";
 import frame37 from "./frame37.svg";
 import frame38 from "./frame38.svg";
 import frame39 from "./frame39.svg";
-import frame40 from "./frame40.svg";
-import frame41 from "./frame41.svg";
 import frame42 from "./frame42.svg";
 import frame43 from "./frame43.svg";
 import frame82 from "./Frame 82.svg";
@@ -19,8 +17,17 @@ import image144 from "./image144.svg";
 import Group569 from "./Group569.svg";
 import frame29 from "./Frame29.svg";
 import frame92 from "./Frame 92.svg";
-import frame101 from "./Frame101.svg";
-import frame102 from "./Frame 102.svg";
+import prova1 from "./Frame56.svg";
+import prova2 from "./Frame62.svg";
+import prova3 from "./Frame108.svg";
+import prova4 from "./Frame69.svg";
+import longtalk1 from "./Group353.svg";
+import longtalk2 from "./Frame110.svg";
+import longtalk3 from "./Frame109.svg";
+import longtalk4 from "./Frame100.svg";
+import residue1 from "./Frame111.svg";
+import residue2 from "./Frame71.svg";
+import residue3 from "./Frame91.svg";
 import frame105 from "./Frame105.svg";
 import frame106 from "./Frame 106.svg";
 import frame107 from "./essay1.svg";
@@ -49,8 +56,9 @@ export interface Projectsko {
   textSets?: {
     title?: string;         // 텍스트 상단 제목
     texts?: string[];       // 본문 텍스트 여러 줄 가능
-    position?: { bottom: string; left: string }; // 위치
-    color: string
+    position?: { top: string; left: string }; // 위치
+    color: string;
+    width: string
   }[];
   images: string[];
   icons: string[];
@@ -170,7 +178,7 @@ export const projects = [
     number: "7", 
     title: "Prova", 
     year: 2025, position: { top: 10, left: 32 }, 
-    images: [frame102],
+    images: [prova1, prova2, prova3, prova4],
     icons: [goldicon1, goldicon2], // 상단 아이콘
     category: "Production Brand BI/BX",
     description: "Prova is a brand that combines production (film and video production) with nova (meaning “new”), providing a comprehensive solution for film and video creation. Through firsthand experience working on film sets, I identified", 
@@ -182,28 +190,32 @@ export const projects = [
         "It is logo variations and key graphics that embody the brand’s role in supporting on-set production, with potential applications in an app interface. Inspired by the focus mark used to center a camera’s frame, the design conveys the brand’s five core values: efficiency, curation, collaboration, consistency, and accessibility.", 
         ""
       ],
-      position: { bottom: "85%", left: "55%" },
-      color: "#606060" // ✅ 여기에 색상 지정
+      position: { top: "14%", left: "55%"},
+      color: "#606060", // ✅ 여기에 색상 지정
+      width: "500px"
     },
     {
       title: "Prova Website",
       texts: ["It is a website that allows users to rent filming equipment and props, as well as book transportation services needed for production. The site provides real-time information on rental availability and inventory, along with detailed descriptions of each type of equipment and its features, making it easy for first-time users to navigate and rent without difficulty.", ""],
-      position: { bottom: "54%", left: "8%" },
-      color: "#D5D5D5" // ✅ 여기에 색상 지정
+      position: { top: "45%", left: "10%" },
+      color: "#D5D5D5",
+      width: "500px"
 
     },
     {
       title: "Prova Application",
       texts: ["It is an application tailored for dynamic filming environments. Using key graphics, I developed promotional content for crews and equipment that conveys the brand’s identity, creating a concept that allows users to experience the brand’s extended ecosystem.", ""],
-      position: { bottom: "43%", left: "8%" },
-      color: "#D5D5D5" // ✅ 여기에 색상 지정
+      position: { top: "56%", left: "10%" },
+      color: "#D5D5D5", // ✅ 여기에 색상 지정
+      width: "500px" // ✅ 여기에 색상 지정
 
     },
     {
       title: "",
       texts: ["Specifically, the brand’s products—including filming equipment, cards, transport trucks, and SNS content—were used as the basis for designing the brand’s application system. By applying the brand’s key graphics at various scales, the design aims to communicate a flexible and scalable brand concept.", ""],
-      position: { bottom: "26%", left: "55%" },
-      color: "#606060" // ✅ 여기에 색상 지정
+      position: { top: "73%", left: "55%" },
+      color: "#606060",
+      width: "500px" // ✅ 여기에 색상 지정
 
     },
   ],
@@ -225,29 +237,29 @@ export const projects = [
         "", 
         ""
       ],
-      position: { bottom: "85%", left: "55%" },
+      position: { top: "85%", left: "55%" },
       color: "#606060" // ✅ 여기에 색상 지정
     },
     {
       title: "Creative Workshop",
       texts: ["The creative workshop is a space that offers repair technique workshops in collaboration with local repair experts. I designed promotional content and merchandise that incorporate various workshop concepts centered on the theme of repair, along with the brand’s key graphic element — the stitch pattern.", ""],
-      position: { bottom: "54.5%", left: "55%" },
-      color: "#606060" // ✅ 여기에 색상 지정
-
+      position: { top: "43.5%", left: "55%" },
+      color: "#606060",
+      width: "500px"
     },
     {
       title: "",
       texts: ["", ""],
-      position: { bottom: "43%", left: "8%" },
+      position: { top: "43%", left: "8%" },
       color: "#D5D5D5" // ✅ 여기에 색상 지정
 
     },
     {
       title: "Merch Shop & Cafe ",
       texts: ["The Overlock merch shop, located alongside the Overlock café, offers a space where visitors can explore a variety of repair materials. Using the brand’s key graphics, I designed repair-themed merchandise and café packaging, and created an application to promote the space and its offerings.", ""],
-      position: { bottom: "26%", left: "55%" },
-      color: "#606060" // ✅ 여기에 색상 지정
-
+      position: { top: "72%", left: "55%" },
+      color: "#606060", // ✅ 여기에 색상 지정
+      width: "500px"
     },
   ],
   },
@@ -256,7 +268,7 @@ export const projects = [
     number: "9", 
     title: "Long-Talk Film Festival", 
     year: 2024, position: { top: 10, left: 32 }, 
-    images: [frame101],
+    images: [longtalk1, longtalk2, longtalk3, longtalk4],
     icons: [goldicon1, goldicon2],
     category: "Flim Festival BI/BX",
     description: "The Long Talk Film Festival begins with the idea of uncovering the unseen side of modern society — a world where even long messages are reduced to three lines and two-hour stories are edited down to thirteen minutes.", 
@@ -268,28 +280,30 @@ export const projects = [
         "Although each program in the film festival tells a different story, they all come together to form one collective narrative that connects society. Based on this idea, I developed the festival’s branding concept using the motif of a puzzle. Four puzzle-shaped symbols with soft, rounded forms were designed to represent the four sections — beginning, conflict, climax, and resolution.", 
         ""
       ],
-      position: { bottom: "85%", left: "8%" },
-      color: "#606060" // ✅ 여기에 색상 지정
+      position: { top: "12.5%", left: "8%" },
+      color: "#606060",
+      width: "500px" // ✅ 여기에 색상 지정
     },
     {
       title: "Motion Graphic",
       texts: ["I designed motion graphics for four programs using a puzzle symbol as the key motif. Created for the program’s opening screens, each motion graphic incorporates puzzle elements that represent the unique identity of each section.", ""],
-      position: { bottom: "72%", left: "8%" },
-      color: "#606060" // ✅ 여기에 색상 지정
-
+      position: { top: "25%", left: "8%" },
+      color: "#606060", // ✅ 여기에 색상 지정
+      width: "500px"
     },
     {
       title: "",
       texts: ["", ""],
-      position: { bottom: "43%", left: "8%" },
+      position: { top: "43%", left: "8%" },
       color: "#D5D5D5" // ✅ 여기에 색상 지정
 
     },
     {
       title: "Program Book",
       texts: ["It is the program book to be distributed at the screening venues. It includes the festival’s curatorial intent and introductions to each program, detailing the screening plans and film descriptions by section. To help readers easily understand the festival’s structure and program concepts, each section was designed with a distinct color scheme corresponding to its theme.", ""],
-      position: { bottom: "23%", left: "8%" },
-      color: "#606060" // ✅ 여기에 색상 지정
+      position: { top: "74%", left: "8%" },
+      color: "#606060",
+      width: "500px" // ✅ 여기에 색상 지정
 
     },
   ],
@@ -298,7 +312,7 @@ export const projects = [
     number: "10", 
     title: "Unsocialized Residue", 
     year: 2023, position: { top: 10, left: 32 }, 
-    images: [frame92],
+    images: [residue1, residue2, residue3],
     icons: [goldicon1, goldicon2],
     category: "Graphic Design",
     description: "“Unsocialized Residue” is an installation project that documents the “residue” or “afterimages” left with me each day. These traces serve no practical purpose, yet through recording them, I aim to express the passage of my time.", 
@@ -307,31 +321,34 @@ export const projects = [
     {
       title: "",
       texts: [
-        "This project combines typography with analog painterly techniques, centering on the repetitive process of printing letters. I captured and recorded the letters and textures I encountered each day, expressing accumulated time through linear patterns. The work was exhibited at the group show “The Sharpness Rolls” held at Chachati Club in Changsin-dong, where I showcased prints created directly on fabric. In addition to being an exhibiting artist, I also participated as a designer, creating the official poster for the exhibition.", 
+        "This project is based on a process that combines typography with analog painterly techniques to repeatedly imprint letters. It captures and records the letters and textures encountered each day, visualizing the passage of time through linearly accumulated patterns. By layering textures and typography step by step, it materializes the time that has passed.", 
         ""
       ],
-      position: { bottom: "81%", left: "2%" },
-      color: "#606060" // ✅ 여기에 색상 지정
+      position: { top: "14%", left: "6%" },
+      color: "#606060",
+      width: "500px" // ✅ 여기에 색상 지정
     },
     {
       title: "",
       texts: ["", ""],
-      position: { bottom: "72%", left: "8%" },
+      position: { top: "72%", left: "8%" },
       color: "#606060" // ✅ 여기에 색상 지정
 
     },
     {
-      title: "",
-      texts: ["", ""],
-      position: { bottom: "40%", left: "8%" },
-      color: "#D5D5D5" // ✅ 여기에 색상 지정
+      title: "<The Sharpness Rolls> 2024",
+      texts: ["The work was exhibited at the group show “The Sharpness Rolls” held at Chachati Club in Changsin-dong, where I showcased prints created directly on fabric. In addition to being an exhibiting artist, I also participated as a designer, creating the official poster for the exhibition.", ""],
+      position: { top: "32%", left: "6%" },
+      color: "#606060",
+      width: "500px" // ✅ 여기에 색상 지정
 
     },
     {
       title: "",
       texts: ["The Residue project began with the process of capturing typography found in daily life and directly printing it using the textures of real objects, prior to developing the linear patterns. Through these sketches, I explored ways to materialize typography through texture, and these studies were also presented in the exhibition. ", ""],
-      position: { bottom: "21%", left: "8%" },
-      color: "#606060" // ✅ 여기에 색상 지정
+      position: { top: "78%", left: "6%" },
+      color: "#606060",
+      width: "500px" // ✅ 여기에 색상 지정
 
     },
   ],
@@ -352,8 +369,9 @@ export const projects = [
         "This slogan was inspired by crop circles, which were once believed to be markings created by extraterrestrials. Although later revealed to be uniquely human-made patterns, crop circles remain one of the most ironic examples of misinterpreted phenomena. Based on this case, the project explores how human perception assigns meaning to the unfamiliar and becomes an experiment in self-reflection through the experience of strangeness.", 
         ""
       ],
-      position: { bottom: "66%", left: "55%" },
-      color: "#606060" // ✅ 여기에 색상 지정
+      position: { top: "29.5%", left: "55%" },
+      color: "#606060",
+      width: "500px" // ✅ 여기에 색상 지정
     },
     {
       title: "",
@@ -371,9 +389,10 @@ export const projects = [
     },
     {
       title: "",
-      texts: ["The Residue project began with the process of capturing typography found in daily life and directly printing it using the textures of real objects, prior to developing the linear patterns. Through these sketches, I explored ways to materialize typography through texture, and these studies were also presented in the exhibition. ", ""],
-      position: { bottom: "38%", left: "55%" },
-      color: "#606060" // ✅ 여기에 색상 지정
+      texts: ["In practice, slogans were worn during experiments in public spaces, and filming was conducted while walking around. The work aimed to reveal human interaction, whether by quietly sitting and engaging with people indirectly or by moving through the space and encountering strangers.", ""],
+      position: { top: "58%", left: "55%" },
+      color: "#606060",
+      width: "500px"
 
     },
   ],
@@ -385,36 +404,37 @@ export const projects = [
     icons: [goldicon1, goldicon2],  
     images: [frame106],
     category: "UXUI Design",
-    description: "Lumi is a media application designed to help users record and recognize sensory distance in their daily lives. Unlike social media platforms that emphasize physical proximity or fast-paced connections, Lumi aims to foster more sustainable relationships. By recording emotional and sensory interactions beyond physical distance,", 
+    description: "Lumi is a slow social application designed to help users record and recognize sensory distance in their daily lives. Unlike social media platforms that emphasize physical proximity or fast-paced connections, Lumi aims to foster more sustainable relationships. By recording emotional and sensory interactions beyond physical distance,", 
     description2: "users can better perceive the depth of their connections. Lumi provides an environment that encourages users to focus on the relationships that truly matter — whether in love, work, or everyday life. The project focused on designing essential features through service planning, PDI user research, and concept implementation.",
      textSets: [
     {
-      title: "",
+      title: "Background",
       texts: [
         "The concept of Lumi originated from anthropologist Edward T. Hall’s idea that space is not merely a physical realm, but a landscape that embodies human relationships and emotions. Inspired by Hall’s observation that people perceive one another differently depending on interpersonal distance, the project began with the question: What if we could create an application that helps users recognize not just physical distance, but also the subjective and sensory distances between individuals?", 
         ""
       ],
-      position: { bottom: "88%", left: "55%" },
-      color: "#CCCCCC" // ✅ 여기에 색상 지정
+      position: { top: "10%", left: "8%" },
+      color: "#FFFFFF", // ✅ 여기에 색상 지정
+      width: "500px"
     },
     {
-      title: "",
+      title: "Service BI/BX",
       texts: ["The name “Lumi” was chosen to evoke the feeling of a familiar friend who is always by your side. The main symbol of the service combines the concept of “light,” which spatially defines and connects people, with a balloon icon to create a sense of warmth and approachability. Using primary colors and geometric forms, the design intuitively represents the element of light.", ""],
-      position: { bottom: "43%", left: "55%" },
-      color: "#606060" // ✅ 여기에 색상 지정
-
+      position: { top: "56.5%", left: "55%" },
+      color: "#606060", // ✅ 여기에 색상 지정
+      width: "500px"
     },
     {
       title: "",
       texts: ["", ""],
-      position: { bottom: "40%", left: "8%" },
+      position: { top: "40%", left: "8%" },
       color: "#D5D5D5" // ✅ 여기에 색상 지정
 
     },
     {
       title: "",
       texts: ["", ""],
-      position: { bottom: "38%", left: "55%" },
+      position: { top: "38%", left: "55%" },
       color: "#606060" // ✅ 여기에 색상 지정
 
     },
@@ -422,13 +442,13 @@ export const projects = [
   },
   { id: 13, 
     number: "+", 
-    title: "Art History Documents", 
+    title: "Art History Essay", 
     year: 2025, position: { top: 10, left: 32 },
     icons: [goldicon1, goldicon2],  
     images: [frame107, frame108, frame109, frame111, frame110, frame112],
-    category: "Art History Essay",
-    description: "Lumi is a media application designed to help users record and recognize sensory distance in their daily lives. Unlike social media platforms that emphasize physical proximity or fast-paced connections, Lumi aims to foster more sustainable relationships. By recording emotional and sensory interactions beyond physical distance,", 
-    description2: "users can better perceive the depth of their connections. Lumi provides an environment that encourages users to focus on the relationships that truly matter — whether in love, work, or everyday life. The project focused on designing essential features through service planning, PDI user research, and concept implementation.",
+    category: "Analysis",
+    description: "These writings are essays in which I reinterpret artworks and culture through the study of art history. I have always enjoyed expanding my thoughts through writing, and it has been an important way for me to understand social and cultural phenomena related to art history. Studying art history allowed", 
+    description2: "me to view art and visual culture within broader social and philosophical contexts, and I found it fascinating to apply these perspectives to real-world cases. Writing has also been a meaningful process for me as a designer, helping me collect and organize inspiration.",
      textSets: [
     {
       title: "",
@@ -548,29 +568,32 @@ export const projectsKo: Projectsko[] = [
         "글자와 늘 붙어있는 이모지. 타입이모지의 기획 배경부터 디자인 프로세스 및 사용 방법에 대한 정보를 담은 가이드 북입니다. 각각의 서체별 타입이모지에 대해 5권으로 이루어져 있으며 모두 동일한 목차로 구성됩니다. 사용자가 이모지를 활용하는 데에 도움을 줄 수 있도록 합니다. ", 
         ""
       ],
-      position: { bottom: "75%", left: "8%" },
-      color: "#CCCCCC" // ✅ 여기에 색상 지정
- // 반응형 가능하게 % 사용
+      position: { top: "75%", left: "8%" },
+      color: "#CCCCCC",
+      width:"" 
     },
     {
       title: "Typemoji App",
       texts: ["가이드 북 좌측 상단에 NFC 태그를 달아 모바일 기기를 가까이 댔을 때 이모지를 종류별로 테스트해볼 수 있고, 다운로드를 받을 수 있는 사이트를 제공합니다. 가이드 북과 함께 이모지를 대화 창에서 텍스트와 함께 테스트해볼 수 있는 환경을 만들었습니다.", ""],
-      position: { bottom: "45%", left: "8%" },
-      color: "#CCCCCC" // ✅ 여기에 색상 지정
+      position: { top: "45%", left: "8%" },
+      color: "#CCCCCC",
+      width:""
 
     },
     {
       title: "Typemoji Website",
       texts: ["PC에서 서체와 함께 타입이모지를 테스트해보며 5종의 타입이모지 패키지를 다운받을 수 있는 웹사이트의 UI를 제작했습니다. 모바일 환경 뿐만 아니라 PC 환경에서 타입 이모지에 대한 업데이트를 확인할 수 있도록 관련 웹사이트를 디자인했습니다.", ""],
-      position: { bottom: "21%", left: "8%" },
-      color: "#CCCCCC" // ✅ 여기에 색상 지정
+      position: { top: "21%", left: "8%" },
+      color: "#CCCCCC",
+      width: "" // ✅ 여기에 색상 지정
 
     },
     {
       title: "Typemoji Welcomekit",
       texts: ["타입 이모지 첫 구매시 선물 키트로 이모지 가이드북과 스티커, 메모장이 제공됩니다. 오프라인 환경에서도 이모지를 접해보며 경험을 확장시킬 수 있는 키트형 어플리케이션을 구성하였습니다.", ""],
-      position: { bottom: "7.8%", left: "8%" },
-      color: "#CCCCCC" // ✅ 여기에 색상 지정
+      position: { top: "7.8%", left: "8%" },
+      color: "#CCCCCC",
+      width: "" // ✅ 여기에 색상 지정
 
     },
   ],
@@ -586,9 +609,9 @@ export const projectsKo: Projectsko[] = [
     category: "프로덕션 브랜드 BX/BI",
     description3: "Prova는 production(영화 및 영상 제작)과 nova(새로움)을 결합한 이름으로, 영화 및 영상 제작에서 필요한 하나의 솔루션을 제공하는 브랜드입니다. 직접 영화 촬영장에서 일을 해보며 고객들의 페인 포인트를 파악하고",
     description4: "분산된 시스템이 아닌 통합형 솔루션으로 촬영 크루와 장비, 소품, 로이케이션까지 현장의 모든 에셋을 제공합니다. 브랜드 기획부터 아이덴티티의 시각 시스템을 개발하였습니다. ",
-    description5: "한글",
+    description5: "",
     icons: [goldicon1, goldicon2], 
-    images: [frame102],
+    images: [prova1, prova2, prova3, prova4],
         textSets: [
     {
       title: "",
@@ -596,30 +619,31 @@ export const projectsKo: Projectsko[] = [
         "촬영 현장을 도와주는 브랜드의 기능을 담아 어플리케이션에 응용될 수 있는 로고 바리에이션과 키 그래픽을 디자인하였습니다. 카메라의 화면 중심을 잡는 초점 기호에서 모티프를 얻어 브랜드의 '효율 / 큐레이션 / 협력 / 지속성 / 접근성' 이라는 5가지 핵심 가치를 전달합니다.", 
         ""
       ],
-      position: { bottom: "85%", left: "55%" },
-      color: "#606060" // ✅ 여기에 색상 지정
- // 반응형 가능하게 % 사용
+       position: { top: "14%", left: "55%"},
+       color: "#606060", // ✅ 여기에 색상 지정
+       width: "500px"
     },
     {
       title: "Prova Website",
       texts: ["촬영 장비 및 소품 등 촬영에 필요한 물품을 대여하고 운송 서비스를 예약할 수 있는 웹사이트를 디자인하였습니다. 촬영 장비 대여 현황이나 재고를 살펴볼 수 있도록 정보를 제공하고, 장비 종류 및 기능에 대한 상세한 설명을 제공하여 처음 접하는 사람들에게도 어려움 없이 대여할 수 있도록 합니다.", ""],
-      position: { bottom: "54%", left: "8%" },
-      color: "#D5D5D5" // ✅ 여기에 색상 지정
-
+      position: { top: "45%", left: "10%" },
+      color: "#D5D5D5",
+      width: "500px"
     },
     {
       title: "Prova Application",
       texts: ["유동적인 촬영 현장에 필요한 어플리케이션을 디자인하였습니다. 키그래픽을 활용하여 브랜드의 아이덴티티를 전달할 수 있는 촬영 크루나 장비 홍보 콘텐츠를 제작하여 브랜드의 확장된 시스템을 경험할 수 있도록 컨셉을 설계하였습니다.", ""],
-      position: { bottom: "43%", left: "8%" },
-      color: "#D5D5D5" // ✅ 여기에 색상 지정
+      position: { top: "56%", left: "10%" },
+      color: "#D5D5D5", // ✅ 여기에 색상 지정
+      width: "500px" // ✅ 여기에 색상 지정
 
     },
     {
       title: "",
       texts: ["구체적인 브랜드 제품으로는 촬영 장비와 카드, 운송 트럭, SNS 콘텐츠를 기반하여 브랜드의 어플리케이션 시스템을 디자인하였습니다. 브랜드의 키 그래픽을 다양한 스케일에 적용하여 유연하고 확장된 브랜드 컨셉을 전달하고자 했습니다.", ""],
-      position: { bottom: "26%", left: "55%" },
-      color: "#606060" // ✅ 여기에 색상 지정
-
+      position: { top: "73%", left: "55%" },
+      color: "#606060",
+      width: "500px" // ✅ 여기에 색상 지정
     },
   ],
   },
@@ -632,7 +656,7 @@ export const projectsKo: Projectsko[] = [
     category: "수선복합문화공간 브랜드 BX/BI",
     description3: "Overlock는 이음새를 뜻하는 단어로, 옛것의 아름다움을 잇는 수선 복합문화공간 브랜드입니다. 상권 위축으로 인해 사라진 이화여대길의 수선골목을 회복하고, 수선의 가치를 전달할 수 있는 복합문화공간을 기획하였습니다. 지나간 아름다움을 보존하며 새로움을 창조하는 브랜드의 철학을",
     description4: "설계하였고, 복합문화공간의 브랜드 아이덴티티 및 디자인 시스템을 개발하였습니다. 이 프로젝트는 실제 이화여대길의 유휴공간을 기반으로 기획되어 공간 디자인을 함께 설계하였고, 이화여대에서 우수 작품으로 선정되어 전시를 하게 되었습니다. ",
-    description5: "한글",
+    description5: "",
     icons: [goldicon1, goldicon2], 
     images: [frame82],
         textSets: [
@@ -642,29 +666,32 @@ export const projectsKo: Projectsko[] = [
         "", 
         ""
       ],
-      position: { bottom: "85%", left: "55%" },
-      color: "#606060" // ✅ 여기에 색상 지정
- // 반응형 가능하게 % 사용
+      position: { top: "85%", left: "55%" },
+      color: "#606060",
+      width: "" // ✅ 여기에 색상 지정
     },
     {
       title: "Creative Workshop",
       texts: ["크레이티브 워크샵은 지역 수선 전문가들과 함께 수선 기법에 대한 워크샵을 제공하는 공간입니다. 수선을 주제로 한 워크샵의 다양한 컨셉과 브랜드의 키 그래픽인 스티치 패턴을 담아 홍보 콘텐츠와 굿즈를 디자인하였습니다.", ""],
-      position: { bottom: "55%", left: "55%" },
-      color: "#606060" // ✅ 여기에 색상 지정
+      position: { top: "44%", left: "55%" },
+      color: "#606060",
+      width: "500px"
 
     },
     {
       title: "",
       texts: ["", ""],
-      position: { bottom: "43%", left: "8%" },
-      color: "#D5D5D5" // ✅ 여기에 색상 지정
+      position: { top: "43%", left: "8%" },
+      color: "#D5D5D5", // ✅ 여기에 색상 지정
+      width: ""
 
     },
     {
       title: "Merch Shop & Cafe",
       texts: ["오버로크 머치샵에서는 오버로크 카페와 함께 다양한 수선 자재들을 살펴볼 수 있는 공간입니다. 브랜드의 키 그래픽을 활용하여 수선 자재와 관련된 굿즈와 카페 패키지를 디자인하여 공간을 홍보할 수 있는 어플리케이션을 제작하였습니다.", ""],
-      position: { bottom: "26%", left: "55%" },
-      color: "#606060" // ✅ 여기에 색상 지정
+      position: { top: "72.5%", left: "55%" },
+      color: "#606060", // ✅ 여기에 색상 지정
+      width: "500px"
 
     },
   ],
@@ -678,9 +705,9 @@ export const projectsKo: Projectsko[] = [
     category: "소통영화제 BX/BI",
     description3: "홍대 상상마당에서 개최된 소통영화제 롱톡은 긴 글은 세줄로 줄이고, 또 2시간을 편집해 13분으로 재생하는 것이 미학이 된 현대 사회의 이면을 발견하는 것에서부터 출발하였습니다. 단절을 넘어서 현실에서 꺼내지 못한 말들을 모아 영화의 방식으로 함께 이야기하고자 개최되었습니다.",
     description4: "소통영화제에서 디자인팀장을 맡아 영화제 아이덴티티 디자인을 담당하였고, 영화제의 릴레이소설을 모티브로 하여 모션, GV 화면에 적용할 작업을 진행하였습니다. 디자인은 다양한 팀원들과의 협업 가운데 일관된 작업 방식이 중요하다는 것을 알게 되었던 프로젝트였습니다.",
-    description5: "한글",
+    description5: "",
     icons: [goldicon1, goldicon2], 
-    images: [frame101],
+    images: [longtalk1, longtalk2, longtalk3, longtalk4],
         textSets: [
     {
       title: "Logo Design",
@@ -688,30 +715,31 @@ export const projectsKo: Projectsko[] = [
         "각 영화제 프로그램은 서로 다른 내용을 가지고 있지만 결국 사회를 연결하는 하나의 이야기를 하고 있다는 점에서 퍼즐을 모티브로 영화제 브랜딩 컨셉을 기획하였습니다. 유연하며 둥근 형태를 가진 퍼즐으로 발단, 위기, 절정, 결말 총 4가지 섹션에 맞는 4가지 종류의 심볼을 디자인하였습니다.", 
         ""
       ],
-      position: { bottom: "85%", left: "8%" },
-      color: "#606060" // ✅ 여기에 색상 지정
- // 반응형 가능하게 % 사용
+      position: { top: "12.5%", left: "8%" },
+      color: "#606060",
+      width: "500px" // ✅ 여기에 색상 지정
     },
     {
       title: "Motion Graphic",
       texts: ["퍼즐 심볼을 활용하여 4가지 프로그램에 맞는 모션 그래픽을 디자인하였습니다. 프로그램 오픈닝 스크린에 사용될 그래픽으로 각 섹션의 아이덴티티를 상징하는 퍼즐을 사용하여 모션 그래픽 패턴을 디자인하였습니다.", ""],
-      position: { bottom: "72%", left: "8%" },
-      color: "#606060" // ✅ 여기에 색상 지정
-
+       position: { top: "25%", left: "8%" },
+      color: "#606060", // ✅ 여기에 색상 지정
+      width: "500px"
     },
     {
       title: "",
       texts: ["", ""],
-      position: { bottom: "43%", left: "8%" },
-      color: "#D5D5D5" // ✅ 여기에 색상 지정
+      position: { top: "43%", left: "8%" },
+      color: "#D5D5D5", // ✅ 여기에 색상 지정
+      width: ""
 
     },
     {
       title: "Program Book",
       texts: ["상영관 현장에서 배포할 프로그램북을 디자인하였습니다. 영화제 기획 의도와 각각의 프로그램에 대한 소개를 담은 프로그램북이며 영화제 상영 기획과 각 섹션별 영화 소개에 대한 내용을 담고 있습니다. 영화제 기획 및 프로그램 컨셉에 대해서 이해하기 쉽도록 각 섹션별 순서에 맞는 색감을 적용하여 책을 제작하였습니다.", ""],
-      position: { bottom: "23%", left: "8%" },
-      color: "#606060" // ✅ 여기에 색상 지정
-
+      position: { top: "74%", left: "8%" },
+      color: "#606060",
+      width: "500px"
     },
   ],
   },
@@ -724,39 +752,42 @@ export const projectsKo: Projectsko[] = [
     category: "그래픽 디자인",
     description3: "<순수한 잔여물: Unsocialized Residue>라는 작업은 매일 저에게 남는 '잔재' 또는 '잔상'을 기록하는 설치형 프로젝트입니다. 이 잔상은 어떤 실용적인 목적을 갖고 있지는 않지만, 그것들을 기록함으로써 저의 시간을",
     description4: "표현하고자 합니다. 실크스크린 기법과 판화를 통해 사물과 타이포그래피를 있는 그대로를 담아내어 잔상을 기록했습니다.",
-    description5: "한글",
+    description5: "",
     icons: [goldicon1, goldicon2], 
-    images: [frame92],
+    images: [residue1, residue2, residue3],
         textSets: [
     {
       title: "",
       texts: [
-        "이 프로젝트는 타이포그래피와 아날로그 회화적 기법을 융합하여 글자를 반복적으로 찍어내는 작업에 기반합니다. 하루하루 마주한 글자와 질감을 포착하여 기록하였고, 선형의 패턴으로 축적된 시간을 표현합니다. 이 프로젝트를 통해 창신동 차차티 클럽 전시관에서 열린 <뾰족함이 굴러가네> 단체전에 참여하였고, 천에 직접 프린팅한 작업을 전시했습니다. 또한 전시 참여자이자 디자이너로 참여하여 해당 전시 포스터를 디자인하였습니다.", 
+        "이 프로젝트는 타이포그래피와 아날로그 회화적 기법을 결합하여 글자를 반복적으로 찍어내는 작업을 기반으로 합니다. 매일 마주한 글자와 질감을 포착하고 기록하며, 선형적으로 쌓인 패턴을 통해 시간을 시각화합니다. 질감과 타이포그래피를 한 층씩 쌓아올려, 지나온 시간을 형상화합니다.", 
         ""
       ],
-      position: { bottom: "81%", left: "2%" },
-      color: "#606060" // ✅ 여기에 색상 지정
- // 반응형 가능하게 % 사용
+      position: { top: "15%", left: "5%" },
+      color: "#606060",
+      width: "470px" // ✅ 여기에 색상 지정
     },
     {
       title: "<뾰족함이 굴러가네> 2024",
-      texts: ["", ""],
-      position: { bottom: "54%", left: "8%" },
-      color: "#606060" // ✅ 여기에 색상 지정
+      texts: ["이 프로젝트를 통해 창신동 차차티 클럽 전시관에서 열린 <뾰족함이 굴러가네> 단체전에 참여하였고, 천에 직접 프린팅한 작업을 전시했습니다. 또한 전시 참여자이자 디자이너로 참여하여 해당 전시 포스터를 디자인하였습니다.", ""],
+     position: { top: "32%", left: "5%" },
+      color: "#606060", // ✅ 여기에 색상 지정
+      width: "500px"
 
     },
     {
       title: "",
       texts: ["", ""],
-      position: { bottom: "43%", left: "8%" },
-      color: "#D5D5D5" // ✅ 여기에 색상 지정
+   position: { top: "23%", left: "8%" },
+      color: "#606060", // ✅ 여기에 색상 지정
+      width: ""
 
     },
     {
       title: "",
-      texts: ["잔여물은 선형의 패턴 이전에 일상에서 포착한 타이포그래피를 실제 사물의 질감으로 직접 찍어내는 작업을 통해 시작되었습니다. 이러한 에스키스를 통해 타이포그래피를 질감과 함께 구체화시키는 방법을 모색하였고, 이를 함께 전시하였습니다.", ""],
-      position: { bottom: "21.5%", left: "8%" },
-      color: "#606060" // ✅ 여기에 색상 지정
+      texts: ["잔여물은 선형의 패턴 이전에 타이포그래피를 실제 사물의 질감으로 직접 찍어내는 작업을 통해 시작되었습니다. 이러한 에스키스를 통해 타이포그래피를 질감과 함께 구체화시키는 방법을 모색하였고, 이를 함께 전시하였습니다.", ""],
+  position: { top: "78%", left: "5%" },
+      color: "#606060", // ✅ 여기에 색상 지정
+      width: "470px"
 
     },
   ],
@@ -770,7 +801,7 @@ export const projectsKo: Projectsko[] = [
     category: "그래픽 디자인",
     description3: "서로 다른 모양을 지닌 사람들. 인간이야말로 우주의 진정한 낯선 생명체이면서도 외계인이 아닐까라는 관점에서 시작된 실험적인 커뮤니케이션 프로젝트입니다. 사람들 사이에서 거리 두기가 익숙해진 코로나 시절,",
     description4: "타자의 관점에서 바라본 우리의 낯선 모습을 표현하기 위해서 입을 수 있는 슬로건을 제작하였습니다. 슬로건을 입고 서울 시내의 올림픽 공원에 돌아다니며 사람들에게 낯선 소통 방식을 통한 경험을 실험적으로 전달하고자 하였습니다.",
-    description5: "한글",
+    description5: "",
     icons: [goldicon1, goldicon2], 
     images: [frame105],
         textSets: [
@@ -780,29 +811,32 @@ export const projectsKo: Projectsko[] = [
         "이 슬로건은 한때 외계인의 문양이라고 알려진 '크롭 서클'에서 모티브로 얻어 제작되었습니다. '크롭 서클'은 한동안 외계인이 그린 문양이라고 알려졌지만, 인간이 만들어낸 독특한 문양으로 밝혀진 아이러니한 사례 중 하나입니다. 이러한 사례를 기반하여 인간의 인식이 얼마나 낯선 것에 의미를 부여하는지 보여주며 낯섦을 통해 인간 스스로를 돌아보게 만드는 인식의 실험이기도 합니다. ", 
         ""
       ],
-      position: { bottom: "66%", left: "55%" },
-      color: "#606060" // ✅ 여기에 색상 지정
- // 반응형 가능하게 % 사용
+      position: { top: "29.5%", left: "55%" },
+      color: "#606060",
+      width: "500px"
     },
     {
       title: "",
       texts: ["", ""],
-      position: { bottom: "54%", left: "8%" },
-      color: "#606060" // ✅ 여기에 색상 지정
+      position: { top: "23%", left: "8%" },
+      color: "#606060", // ✅ 여기에 색상 지정
+      width: ""
 
     },
     {
       title: "",
       texts: ["", ""],
-      position: { bottom: "43%", left: "8%" },
-      color: "#D5D5D5" // ✅ 여기에 색상 지정
+      position: { top: "23%", left: "8%" },
+      color: "#606060", // ✅ 여기에 색상 지정
+      width: ""
 
     },
     {
       title: "",
-      texts: ["실제로 슬로건을 착용하여 공공장소에서 실험을 진행하였으며 직접 걸어다니면서 촬영을 진행하였습니다. 가만히 앉아 사람들과 간접적으로 어울리거나 돌아다니면서 낯선 대상과 인간과의 소통을 드러내고자 하였습니다.", ""],
-      position: { bottom: "40%", left: "55%" },
-      color: "#606060" // ✅ 여기에 색상 지정
+      texts: ["실제로 슬로건을 착용하고 공공장소에서 실험을 진행했으며, 직접 걸어 다니며 촬영을 수행했습니다. 가만히 앉아 사람들과 간접적으로 어울리거나, 돌아다니며 낯선 대상과의 인간적 소통을 드러내고자 했습니다.", ""],
+      position: { top: "58%", left: "55%" },
+      color: "#606060",
+      width: "500px"
 
     },
   ],
@@ -814,44 +848,92 @@ export const projectsKo: Projectsko[] = [
     script: "",
     script2: "",
     category: "서비스 디자인",
-    description3: "루미라는 서비스는 일상 속 감각적 거리를 기록하며 인식할 수 있도록 돕는 미디어 어플입니다. SNS처럼 물리적 거리나 빠른 관계 형성을 강조하는 대신, 루미는 지속 가능한 관계의 형성을 목표로 설계되었습니다. 사용자는 물리적 거리를 넘어 서로 간의 감정적·감각적 상호작용을 기록함으로써",
+    description3: "루미라는 서비스는 일상 속 감각적 거리를 기록하며 인식할 수 있도록 돕는 슬로우 소셜 어플입니다. SNS처럼 빠른 관계 형성을 강조하는 대신, 루미는 지속 가능한 관계의 형성을 목표로 설계되었습니다. 사용자는 물리적 거리를 넘어 서로 간의 감정적·감각적 상호작용을 기록함으로써",
     description4: "관계의 깊이를 체감할 수 있습니다. 루미는 사랑, 동료, 비즈니스 등 다양한 인간관계 속에서 진정으로 소중한 관계에 집중할 수 있는 환경을 제공합니다. 서비스 기획부터 PDI 사용자 리서치, 컨셉 구현을 중심으로 필요한 기능을 설계하는 것에 집중하여 진행하였습니다.",
-    description5: "한글",
+    description5: "",
     icons: [goldicon1, goldicon2], 
     images: [frame106],
         textSets: [
     {
-      title: "",
+      title: "Background",
       texts: [
-        "루미라는 서비스는 공간은 물리적 영역만이 아닌 인간관계와 감정을 담아내는 풍경이다라고 에드워드 홀이라는 인류학자의 말에서 출발하게 되었습니다. 에드워드 홀이 인간관계의 거리에 따라 서로를 감각적으로 다르게 인식한다는 점을 주목하고 물리적 거리 위주가 아닌 개인간의 주관적, 감각적 거리를 인식할 수 있는 어플을 만들면 어떨까라는 생각에서 서비스를 기획하게 되었습니다.", 
+        "루미라는 서비스는 공간은 물리적 영역만이 아닌 인간관계와 감정을 담아내는 풍경이다라는 에드워드 홀 인류학자의 말에서 출발하게 되었습니다. 에드워드 홀이 인간관계의 거리에 따라 서로를 감각적으로 다르게 인식한다는 점을 주목하고 물리적 거리 위주가 아닌 개인간의 주관적, 감각적 거리를 인식할 수 있는 어플을 만들면 어떨까라는 생각에서 서비스를 기획하게 되었습니다.", 
         ""
       ],
-      position: { bottom: "87.5%", left: "55%" },
-      color: "#FFFFFF" // ✅ 여기에 색상 지정
- // 반응형 가능하게 % 사용
+      position: { top: "10.5%", left: "8%" },
+      color: "#FFFFFF", // ✅ 여기에 색상 지정
+      width: "500px"
     },
     {
-      title: "",
+      title: "Sevice BI/BX",
       texts: ["늘 곁에 있는 친근한 친구와 같은 이름으로 ‘루미(Lumi)’ 라는 네이밍을 설정하고, 대상을 공간적으로 인지시켜주는 ‘빛’ 과 ‘블룬 아이콘’을 결합하여 서비스의 메인 심볼을 디자인하였습니다. 원색의 컬러와 기하학적 형태를 활용하여 빛의 요소를 직관적으로 나타냅니다.", ""],
-      position: { bottom: "43%", left: "55%" },
-      color: "#606060" // ✅ 여기에 색상 지정
-
+      position: { top: "56.5%", left: "55%" },
+      color: "#606060", // ✅ 여기에 색상 지정
+      width: "500px"
     },
     {
       title: "",
       texts: ["", ""],
-      position: { bottom: "43%", left: "8%" },
-      color: "#D5D5D5" // ✅ 여기에 색상 지정
-
+      position: { top: "43%", left: "8%" },
+      color: "#D5D5D5", // ✅ 여기에 색상 지정
+      width: "500px"
     },
     {
       title: "",
       texts: ["", ""],
-      position: { bottom: "40%", left: "55%" },
-      color: "#606060" // ✅ 여기에 색상 지정
-
+      position: { top: "40%", left: "55%" },
+      color: "#606060", // ✅ 여기에 색상 지정
+      width: "500px"
     },
   ],
   },
+  {
+
+    id: "13",
+    title: "미술사 에세이",
+    year: 2025,
+    script: "",
+    script2: "",
+    category: "사회 문화 및 작품 분석",
+    description3: "이 글들은 미술사를 공부하며 작품과 문화를 재해석한 에세이입니다. 평소에도 글쓰기를 통해 생각을 확장하는 일을 좋아했고, 이는 미술사와 연관된 사회·문화적 현상을 이해하는 데 중요한 방법이었습니다. 특히 미술사를 공부하면서 사회적·철학적 맥락 속에서 미술과 시각문화를 바라볼 수 있었고,",
+    description4: "이러한 관점을 실제 사례에 적용해 분석하는 과정이 무척 흥미로웠습니다. 또한 글쓰기는 디자이너로서 영감을 수집하고 정리하는 하나의 과정이기도 했습니다.",
+    description5: "",
+    icons: [goldicon1, goldicon2], 
+    images: [frame107, frame108, frame109, frame111, frame110, frame112],
+        textSets: [
+    {
+      title: "",
+      texts: [
+        "", 
+        ""
+      ],
+      position: { top: "10.5%", left: "8%" },
+      color: "#FFFFFF", // ✅ 여기에 색상 지정
+      width: "500px"
+    },
+    {
+      title: "Sevice BI/BX",
+      texts: ["", ""],
+      position: { top: "56.5%", left: "55%" },
+      color: "#606060", // ✅ 여기에 색상 지정
+      width: "500px"
+    },
+    {
+      title: "",
+      texts: ["", ""],
+      position: { top: "43%", left: "8%" },
+      color: "#D5D5D5", // ✅ 여기에 색상 지정
+      width: "500px"
+    },
+    {
+      title: "",
+      texts: ["", ""],
+      position: { top: "40%", left: "55%" },
+      color: "#606060", // ✅ 여기에 색상 지정
+      width: "500px"
+    },
+  ],
+  },
+   
   // 다른 프로젝트도 동일하게
 ];

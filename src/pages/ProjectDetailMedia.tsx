@@ -61,7 +61,7 @@ const ProjectDetailMedia: React.FC<ProjectDetailMediaProps> = ({
           key={index}
           src={svg}
           alt={`SVG illustration ${index + 1}`}
-          className="w-full h-auto"
+          className="mt-32 w-full h-auto"
         />
       ))}
     </div>

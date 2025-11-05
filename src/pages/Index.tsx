@@ -1,21 +1,58 @@
+// ✅ 프로젝트 원 + 선 길이 px 고정 + 1440x900 기준 scale 반응형 전체 코드
+
 import { Link } from "react-router-dom";
 import { projects } from "../data/projects";
+import { useEffect, useState } from "react";
 
 const Index = () => {
+  const baseWidth = 1440;
+  const baseHeight = 900;
+  const [scale, setScale] = useState(1);
+
+  // 프로젝트 원 좌표 (px 기준)
   const positions = [
-    { id: 1, top: "32%", left: "65%" },
-    { id: 2, top: "32%", left: "52%" },
-    { id: 3, top: "32%", left: "40%" },
-    { id: 4, top: "18%", left: "29%" },
-    { id: 5, top: "14%", left: "23%" },
-    { id: 6, top: "14%", left: "18%" },
-    { id: 7, top: "61%", left: "5%" },
-    { id: 8, top: "60%", left: "19.5%" },
-    { id: 9, top: "88.5%", left: "18%" },
-    { id: 10, top: "60%", left: "55%" },
-    { id: 11, top: "88.5%", left: "52%" },
-    { id: 12, top: "57%", left: "86%" },
+    { id: 1, topPx: 300, leftPx: 1166 },
+    { id: 2, topPx: 300, leftPx: 988 },
+    { id: 3, topPx: 300, leftPx: 816 },
+    { id: 4, topPx: 162, leftPx: 475 },
+    { id: 5, topPx: 130, leftPx: 350 },
+    { id: 6, topPx: 130, leftPx: 259.2 },
+    { id: 7, topPx: 540, leftPx: 72 },
+    { id: 8, topPx: 540, leftPx: 350 },
+    { id: 9, topPx: 775, leftPx: 350 },
+    { id: 10, topPx: 540, leftPx: 816 },
+    { id: 11, topPx: 775, leftPx: 816 },
+    { id: 12, topPx: 513, leftPx: 1550 },
   ];
+
+  // 선 데이터(px 기준)
+  const mapLines = [
+    { topPx: 108, leftPx: 43, widthPx: 510, heightPx: 3, rotate: 0, color: 'gray-400' },
+    { topPx: 855, leftPx: 43, widthPx: 1300, heightPx: 3, rotate: 0, color: 'gray-400' },
+    { topPx: 270, leftPx: 500, widthPx: 750, heightPx: 3, rotate: 0, color: 'gray-400' },
+    { topPx: 270, leftPx: 70, widthPx: 250, heightPx: 3, rotate: 0, color: 'gray-300' },
+    { topPx: 485, leftPx: 1200, widthPx: 480, heightPx: 3, rotate: 0, color: 'gray-400' },
+    { topPx: 855, leftPx: 1500, widthPx: 180, heightPx: 3, rotate: 0, color: 'gray-400' },
+
+    { topPx: 470, leftPx: 320, widthPx: 200, heightPx: 3, rotate: 90, color: 'gray-300' },
+    { topPx: 530, leftPx: 740, widthPx: 200, heightPx: 3, rotate: 45, color: 'gray-300' },
+    { topPx: 270, leftPx: 1250, widthPx: 270, heightPx: 3, rotate: 90, color: 'gray-400' },
+    { topPx: 108, leftPx: 46, widthPx: 750, heightPx: 3, rotate: 90, color: 'gray-400' },
+    { topPx: 485, leftPx: 1650, widthPx: 372, heightPx: 3, rotate: 90, color: 'gray-400' },
+    { topPx: 110, leftPx: 553, widthPx: 220, heightPx: 3, rotate: 90, color: 'gray-400' },
+  ];
+
+  useEffect(() => {
+    const handleResize = () => {
+      const w = window.innerWidth / baseWidth;
+      const h = window.innerHeight / baseHeight;
+      setScale(Math.min(w, h));
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className="min-h-screen bg-white text-black font-helvetica">
@@ -60,86 +97,74 @@ const Index = () => {
         </div>
       </header>
 
-      {/* MAP SECTION */}
-      <section className="relative w-full h-[100vh] -mt-10 bg-white">
-        {/* 영역 배경 텍스트 */}
-        <p className="absolute bottom-[4%] left-[6%] -rotate-90 text-gray-400 text-xl md:text-base tracking-wide w-[150px] origin-left">
-          Brand Identity / Experience Design
-        </p>
-        <p className="absolute bottom-[4%] left-[35%] -rotate-90 text-gray-400 text-xl md:text-base w-[120px] origin-left">
-          Editorial / Graphic Design
-        </p>
-        <p className="absolute top-[15%] left-[4.5%] text-gray-400 text-xl w-[120px] md:text-base">
-          Video / Web Design
-        </p>
-        <p className="absolute top-[56%] right-[18%] text-gray-400 text-xl w-[120px] md:text-base">
-          UX/UI User Experience Design
-        </p>
-
-        {/* 선(Line)들 (z-0) */}
-        <div className="absolute top-[12%] left-[3%] w-[32%] h-[2.5px] bg-gray-500 z-0" />
-        <div className="absolute top-[95%] left-[3%] w-[80%] h-[2.5px]  bg-gray-500 z-0" />
-        <div className="absolute top-[30%] left-[32.5%] w-[44%] h-[2.5px]  bg-gray-500 z-0" />
-        <div className="absolute top-[30%] left-[4%] w-[15.5%] h-[2.5px]  bg-gray-400 z-0" />
-        <div className="absolute top-[54%] right-[1.3%] w-[25%] h-[2.5px]  bg-gray-500 z-0" />
-        <div className="absolute top-[95%] right-[1.3%] w-[8%] h-[2.5px]  bg-gray-500 z-0" />
-
-        <div className="absolute top-[40.2%] left-[13.9%] w-[11%] h-[2.5px] rotate-90   bg-gray-400 z-0" />
-        <div className="absolute top-[43.1%] left-[68%] w-[11.6%] h-[2.5px] rotate-90  bg-gray-500 z-0" />
-        <div className="absolute top-[53.5%] left-[-19.1%] w-[44.4%] h-[2.5px] rotate-90  bg-gray-500 z-0" />
-        <div className="absolute top-[74.5%] left-[87%] w-[19.5%] h-[2.5px] rotate-90  bg-gray-500 z-0" />
-        <div className="absolute top-[22%] left-[28.4%] w-[8.4%] h-[2.5px] rotate-90  bg-gray-500 z-0" />
-
-        {/* 십자가 기준선 (z-0) */}
-        <div className="absolute left-[24.2%] bottom-[40%] w-0 h-0">
-          <div className="absolute w-[12vw] h-[0.4vh] bg-gray-400 rotate-45 left-1/2 -translate-x-1/2 z-0"></div>
-        </div>
-        <div className="absolute left-[55%] bottom-[40%] w-0 h-0">
-          <div className="absolute w-[12vw] h-[0.4vh] bg-gray-400 -rotate-45 left-1/2 -translate-x-1/2 z-0"></div>
-        </div>
-
-        {/* 프로젝트 번호 + 원 (z-10) */}
-        {positions.map((item) => (
-          <div
-            key={item.id}
-            className="absolute z-10 group" // group 추가
-            style={{ top: item.top, left: item.left }}
-          >
-            <div className="relative inline-block">
-              {/* 항상 보이는 검정 원 */}
-              <span
-                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
-                           w-12 h-12 md:w-12 md:h-12 rounded-full bg-gray-300"
-                aria-hidden="true"
-              />
-
-              {/* 프로젝트 번호 */}
-              <Link
-                to={`/project/${item.id}`}
-                className="relative z-10 text-white group-hover:text-black font-helvetica text-base md:text-lg flex items-center justify-center w-14 h-14 md:w-16 md:h-16 transition-colors duration-300"
-              >
-                {item.id}
-              </Link>
-
-              {/* 호버 시 노란색 원 */}
-              <span
-                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
-                           w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#F8F3A1]
-                           opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                aria-hidden="true"
-              />
-            </div>
-          </div>
-        ))}
-
-        {/* 화살표 (z-20) */}
+      {/* MAP WRAPPER */}
+      <section className="relative w-full h-screen flex justify-center items-center overflow-hidden">
         <div
-          className="absolute bottom-[3%] right-[11.5%]
-             w-0 h-0
-             border-l-[20px] border-l-transparent
-             border-r-[20px] border-r-transparent
-             border-b-[35px] border-b-black z-20"
-        />
+          className="origin-top-left relative"
+          style={{ width: `${baseWidth}px`, height: `${baseHeight}px`, transform: `scale(${scale})` }}
+        >
+          {/* 영역 텍스트 */}
+          <p className="absolute bottom-[4.5%] left-[7%] -rotate-90 font-normal text-gray-400 text-2xl md:text-2xl tracking-wide w-[250px] origin-left">
+            Brand Identity / Experience Design
+          </p>
+          <p className="absolute bottom-[61%] left-[42%] text-gray-400 text-2xl md:text-2xl w-[180px] origin-left">
+            Editorial / Graphic Design
+          </p>
+          <p className="absolute top-[14%] left-[5%] text-gray-400 text-2xl w-[130px] md:text-2xl">
+            Video / Web Design
+          </p>
+          <p className="absolute top-[56%] right-[-10%] text-gray-400 text-2xl w-[240px] md:text-2xl">
+            UX/UI User Experience Design
+          </p>
+
+          {/* 선(Line) 렌더링 */}
+          {mapLines.map((line, i) => (
+            <div
+              key={i}
+              className={`absolute bg-${line.color} z-0`}
+              style={{
+                top: line.topPx,
+                left: line.leftPx,
+                width: line.widthPx,
+                height: line.heightPx,
+                transform: `rotate(${line.rotate}deg)`,
+                transformOrigin: 'top left',
+              }}
+            />
+          ))}
+
+          {/* 프로젝트 원 + 번호 */}
+          {positions.map((item, index) => (
+            <div
+              key={item.id}
+              className="absolute z-10 group"
+              style={{ top: item.topPx, left: item.leftPx }}
+            >
+              <div className="relative inline-block">
+                <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-[#F8F3A1]" aria-hidden="true" />
+                <Link
+                  to={`/project/${item.id}`}
+                  className="relative z-10 text-black group-hover:text-black font-helvetica text-base flex items-center justify-center w-14 h-14 transition-colors duration-300"
+                >{item.id}</Link>
+                <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300" aria-hidden="true" />
+              </div>
+            </div>
+          ))}
+
+          {/* 화살표 */}
+          <div
+            className="absolute z-20"
+            style={{
+              bottom: "3%",
+              right: "-5%",
+              width: 0,
+              height: 0,
+              borderLeft: "20px solid transparent",
+              borderRight: "20px solid transparent",
+              borderBottom: "35px solid black",
+            }}
+          />
+        </div>
       </section>
     </div>
   );
