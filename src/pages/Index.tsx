@@ -27,19 +27,19 @@ const Index = () => {
 
   // 선 데이터(px 기준)
   const mapLines = [
-    { topPx: 108, leftPx: 43, widthPx: 510, heightPx: 3, rotate: 0, color: 'gray-400' },
-    { topPx: 855, leftPx: 43, widthPx: 1300, heightPx: 3, rotate: 0, color: 'gray-400' },
-    { topPx: 270, leftPx: 500, widthPx: 750, heightPx: 3, rotate: 0, color: 'gray-400' },
-    { topPx: 270, leftPx: 70, widthPx: 250, heightPx: 3, rotate: 0, color: 'gray-300' },
-    { topPx: 485, leftPx: 1200, widthPx: 480, heightPx: 3, rotate: 0, color: 'gray-400' },
-    { topPx: 855, leftPx: 1500, widthPx: 180, heightPx: 3, rotate: 0, color: 'gray-400' },
+    { topPx: 108, leftPx: 43, widthPx: 510, heightPx: 3, rotate: 0, color: 'bg-gray-400' },
+    { topPx: 855, leftPx: 43, widthPx: 1300, heightPx: 3, rotate: 0, color: 'bg-gray-400' },
+    { topPx: 270, leftPx: 500, widthPx: 750, heightPx: 3, rotate: 0, color: 'bg-gray-400' },
+    { topPx: 270, leftPx: 70, widthPx: 250, heightPx: 3, rotate: 0, color: 'bg-gray-300' },
+    { topPx: 485, leftPx: 1200, widthPx: 480, heightPx: 3, rotate: 0, color: 'bg-gray-400' },
+    { topPx: 855, leftPx: 1500, widthPx: 180, heightPx: 3, rotate: 0, color: 'bg-gray-400' },
 
-    { topPx: 470, leftPx: 320, widthPx: 200, heightPx: 3, rotate: 90, color: 'gray-300' },
-    { topPx: 530, leftPx: 740, widthPx: 200, heightPx: 3, rotate: 45, color: 'gray-300' },
-    { topPx: 270, leftPx: 1250, widthPx: 270, heightPx: 3, rotate: 90, color: 'gray-400' },
-    { topPx: 108, leftPx: 46, widthPx: 750, heightPx: 3, rotate: 90, color: 'gray-400' },
-    { topPx: 485, leftPx: 1650, widthPx: 372, heightPx: 3, rotate: 90, color: 'gray-400' },
-    { topPx: 110, leftPx: 553, widthPx: 220, heightPx: 3, rotate: 90, color: 'gray-400' },
+    { topPx: 470, leftPx: 320, widthPx: 200, heightPx: 3, rotate: 90, color: 'bg-gray-300' },
+    { topPx: 530, leftPx: 740, widthPx: 200, heightPx: 3, rotate: 45, color: 'bg-gray-300' },
+    { topPx: 270, leftPx: 1250, widthPx: 270, heightPx: 3, rotate: 90, color: 'bg-gray-400' },
+    { topPx: 108, leftPx: 46, widthPx: 750, heightPx: 3, rotate: 90, color: 'bg-gray-400' },
+    { topPx: 485, leftPx: 1650, widthPx: 372, heightPx: 3, rotate: 90, color: 'bg-gray-400' },
+    { topPx: 110, leftPx: 553, widthPx: 220, heightPx: 3, rotate: 90, color: 'bg-gray-400' },
   ];
 
   useEffect(() => {
@@ -121,7 +121,7 @@ const Index = () => {
           {mapLines.map((line, i) => (
             <div
               key={i}
-              className={`absolute bg-${line.color} z-0`}
+              className={`absolute ${line.color} z-0`}
               style={{
                 top: line.topPx,
                 left: line.leftPx,

@@ -61,7 +61,7 @@ const ProjectDetailKo = () => {
             </div>
           </div>
           {project.script2 && (
-            <p className="text-md text-muted-foreground w-[150px] leading-6 ml-auto mr-2 text-right">
+            <p className="text-md text-muted-foreground w-[300px] leading-6 text-sm ml-auto mr-2 mt-10 text-right">
               {project.script2}
             </p>
           )}
