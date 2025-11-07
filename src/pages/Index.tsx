@@ -36,7 +36,7 @@ const Index = () => {
 
     { topPx: 470, leftPx: 320, widthPx: 200, heightPx: 3, rotate: 90, color: 'bg-gray-300' },
     { topPx: 530, leftPx: 740, widthPx: 200, heightPx: 3, rotate: 45, color: 'bg-gray-300' },
-    { topPx: 270, leftPx: 1250, widthPx: 270, heightPx: 3, rotate: 90, color: 'bg-gray-400' },
+    { topPx: 270, leftPx: 1250, widthPx: 275, heightPx: 3, rotate: 90, color: 'bg-gray-400' },
     { topPx: 108, leftPx: 46, widthPx: 750, heightPx: 3, rotate: 90, color: 'bg-gray-400' },
     { topPx: 485, leftPx: 1650, widthPx: 372, heightPx: 3, rotate: 90, color: 'bg-gray-400' },
     { topPx: 110, leftPx: 553, widthPx: 220, heightPx: 3, rotate: 90, color: 'bg-gray-400' },
