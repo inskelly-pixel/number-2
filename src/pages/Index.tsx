@@ -5,8 +5,10 @@ import { projects } from "../data/projects";
 import { useEffect, useState } from "react";
 
 const Index = () => {
-  const baseWidth = 1440;
+  const baseWidth = 1512;
   const baseHeight = 900;
+  const minScale = 0.5; // 최소 축소 비율
+  const maxScale = 0.5; // 최대 확대 비율
   const [scale, setScale] = useState(1);
 
   // 프로젝트 원 좌표 (px 기준)
@@ -46,6 +48,8 @@ const Index = () => {
     const handleResize = () => {
       const w = window.innerWidth / baseWidth;
       const h = window.innerHeight / baseHeight;
+      const newScale = Math.min(Math.max(Math.min(w, h), minScale), maxScale);
+      setScale(newScale);
       setScale(Math.min(w, h));
     };
 
@@ -61,8 +65,8 @@ const Index = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {/* Left */}
           <div className="space-y-1">
-            <h1 className="text-lg md:text-xl font-normal">Eun Kyeol Kim</h1>
-            <p className="text-sm md:text-base text-gray-400 leading-tight">
+            <h1 className="text-3xl md:text-2xl font-normal">Eun Kyeol Kim</h1>
+            <p className="text-sm md:text-base text-gray-500 leading-tight">
               Ewha Womans University Visual Design major,
               <br />
               double major in Art History
@@ -71,15 +75,16 @@ const Index = () => {
 
           {/* Center */}
           <div className="space-y-1 max-w-[800px] md:ml-[-50px]">
-            <h2 className="text-lg md:text-xl font-normal">Design + Contexts</h2>
-            <p className="text-sm md:text-base text-gray-400 leading-snug">
+            <h2 className="text-3xl md:text-2xl font-normal">Vision</h2>
+            <p className="text-sm md:text-base text-gray-500 leading-snug">
               I pursue digital communication design that connects the contexts of everyday life.
               With an integrative mindset and flexible, experimental perspective, I strive to present creative visual solutions.
             </p>
           </div>
 
           {/* Right */}
-          <div className="flex flex-col text-sm text-gray-400 space-y-1">
+          <div className="flex flex-col text-sm text-gray-500 space-y-2 z-10">
+             <h3 className="text-black text-2xl ml-36 mb-2">Portfolio</h3>
             {projects.map((p) => (
               <Link
                 key={p.id}
@@ -97,75 +102,96 @@ const Index = () => {
         </div>
       </header>
 
-      {/* MAP WRAPPER */}
-      <section className="relative w-full h-screen flex justify-center items-center overflow-hidden">
-        <div
-          className="origin-top-left relative"
-          style={{ width: `${baseWidth}px`, height: `${baseHeight}px`, transform: `scale(${scale})` }}
-        >
-          {/* 영역 텍스트 */}
-          <p className="absolute bottom-[4.5%] left-[7%] -rotate-90 font-normal text-gray-400 text-2xl md:text-2xl tracking-wide w-[250px] origin-left">
-            Brand Identity / Experience Design
-          </p>
-          <p className="absolute bottom-[61%] left-[42%] text-gray-400 text-2xl md:text-2xl w-[180px] origin-left">
-            Editorial / Graphic Design
-          </p>
-          <p className="absolute top-[14%] left-[5%] text-gray-400 text-2xl w-[130px] md:text-2xl">
-            Video / Web Design
-          </p>
-          <p className="absolute top-[56%] right-[-10%] text-gray-400 text-2xl w-[240px] md:text-2xl">
-            UX/UI User Experience Design
-          </p>
+    {/* MAP WRAPPER */}
+<section className="relative w-full h-screen flex justify-start items-start overflow-visible mt-[-170px] z-0">
+  <div
+    className="origin-top-left relative"
+    style={{
+      width: `${baseWidth}px`,
+      height: `${baseHeight}px`,
+      transform: `scale(${scale})`,
+      transformOrigin: "top left",
+      position: "relative", // 절대 위치 대신 상대 위치
+      left: 0,
+      top: 0,
+    }}
+  >
+    {/* 영역 텍스트 */}
+    <p style={{ left: 0.064 * baseWidth, bottom: 0.045 * baseHeight }}
+    className="absolute -rotate-90 font-normal text-gray-400 text-2xl md:text-2xl tracking-wide w-[250px] origin-left">
+      Brand Identity / Experience Design
+    </p>
+    <p style={{ left: 0.38 * baseWidth, bottom: 0.61 * baseHeight }}
+    className="absolute text-gray-400 text-2xl md:text-2xl w-[180px] origin-left">
+      Editorial / Graphic Design
+    </p>
+    <p  style={{ left: 0.047 * baseWidth, top: 0.14 * baseHeight }}
+    className="absolute text-gray-400 text-2xl w-[130px] md:text-2xl">
+      Video / Web Design
+    </p>
+    <p style={{ left: 0.84 * baseWidth, top: 0.56 * baseHeight }}
+    className="absolute text-gray-400 text-2xl w-[240px] md:text-2xl">
+      UX/UI User Experience Design
+    </p>
 
-          {/* 선(Line) 렌더링 */}
-          {mapLines.map((line, i) => (
-            <div
-              key={i}
-              className={`absolute ${line.color} z-0`}
-              style={{
-                top: line.topPx,
-                left: line.leftPx,
-                width: line.widthPx,
-                height: line.heightPx,
-                transform: `rotate(${line.rotate}deg)`,
-                transformOrigin: 'top left',
-              }}
-            />
-          ))}
+    {/* 선(Line) 렌더링 */}
+    {mapLines.map((line, i) => (
+      <div
+        key={i}
+        className={`absolute ${line.color} z-0`}
+        style={{
+          top: line.topPx,
+          left: line.leftPx,
+          width: line.widthPx,
+          height: line.heightPx,
+          transform: `rotate(${line.rotate}deg)`,
+          transformOrigin: "top left",
+        }}
+      />
+    ))}
 
-          {/* 프로젝트 원 + 번호 */}
-          {positions.map((item, index) => (
-            <div
-              key={item.id}
-              className="absolute z-10 group"
-              style={{ top: item.topPx, left: item.leftPx }}
-            >
-              <div className="relative inline-block">
-                <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-[#F8F3A1]" aria-hidden="true" />
-                <Link
-                  to={`/project/${item.id}`}
-                  className="relative z-10 text-black group-hover:text-black font-helvetica text-base flex items-center justify-center w-14 h-14 transition-colors duration-300"
-                >{item.id}</Link>
-                <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300" aria-hidden="true" />
-              </div>
-            </div>
-          ))}
-
-          {/* 화살표 */}
-          <div
-            className="absolute z-20"
-            style={{
-              bottom: "3%",
-              right: "-5%",
-              width: 0,
-              height: 0,
-              borderLeft: "20px solid transparent",
-              borderRight: "20px solid transparent",
-              borderBottom: "35px solid black",
-            }}
+    {/* 프로젝트 원 + 번호 */}
+    {positions.map((item) => (
+      <div
+        key={item.id}
+        className="absolute z-10 group"
+        style={{ top: item.topPx, left: item.leftPx }}
+      >
+        <div className="relative inline-block">
+          <span
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-[#FFF000]"
+            aria-hidden="true"
+          />
+          <Link
+            to={`/project/${item.id}`}
+            className="relative z-10 text-black group-hover:text-black font-helvetica text-base flex items-center justify-center w-14 h-14 transition-colors duration-300"
+          >
+            {item.id}
+          </Link>
+          <span
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            aria-hidden="true"
           />
         </div>
-      </section>
+      </div>
+    ))}
+
+    {/* 화살표 */}
+    <div
+      className="absolute z-20"
+      style={{
+        bottom: 0.03 * baseHeight,
+        left: baseWidth - 0.06 * baseWidth - 20, // 20px = 화살표 폭
+        width: 0,
+        height: 0,
+        borderLeft: "20px solid transparent",
+        borderRight: "20px solid transparent",
+        borderBottom: "35px solid black",
+      }}
+    />
+  </div>
+</section>
+
     </div>
   );
 };

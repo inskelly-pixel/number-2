@@ -1,51 +1,4 @@
 import { Project } from "@/types/project";
-import frame33 from "./frame33.svg";
-import frame35 from "./frame35.svg";
-import frame36 from "./700.svg";
-import frame37 from "./frame37.svg";
-import frame38 from "./frame38.svg";
-import frame39 from "./frame39.svg";
-import frame42 from "./frame42.svg";
-import frame43 from "./frame43.svg";
-import frame82 from "./Frame 82.svg";
-import frame83 from "./overlock0.png";
-import frame85 from "./Frame 85.svg";
-import image143 from "./image 143.svg";
-import Rectangle from "./Rectangle.svg";
-import image144 from "./image144.svg";
-import Group569 from "./Group569.svg";
-import frame29 from "./Frame29.svg";
-import frame92 from "./Frame 92.svg";
-import prova1 from "./Frame56.svg";
-import prova2 from "./prova2.svg";
-import prova3 from "./prova3.svg";
-import prova4 from "./Frame108.svg";
-import prova5 from "./prova5.svg";
-import longtalk1 from "./Group353.svg";
-import longtalk2 from "./Frame110.svg";
-import longtalk3 from "./Frame109.svg";
-import longtalk4 from "./longtalk4.svg";
-import longtalk5 from "./longtalk5.svg";
-import longtalk6 from "./longtalk6.png";
-import residue1 from "./residue1.svg";
-import residue2 from "./residue2.svg";
-import residue3 from "./residue3.svg";
-import residue4 from "./residue4.svg";
-import residue5 from "./Group573.png";
-import residue6 from "./Frame91.svg";
-import alien1 from "./alien1.svg";
-import alien2 from "./alien2.svg";
-import alien3 from "./alien3.svg";
-import alien4 from "./alien4.svg";
-import frame106 from "./Frame 106.svg";
-import frame107 from "./essay1.svg";
-import frame108 from "./essay2.svg";
-import frame109 from "./essay 4.svg";
-import frame110 from "./essay 5.svg";
-import frame111 from "./essay 3.svg";
-import frame112 from "./essay6.svg";
-import goldicon1 from "./goldicon1.svg";
-import goldicon2 from "./goldicon2.svg";
 
 export interface Projectsko {
   id: string | number;
@@ -80,8 +33,8 @@ export const projects = [
     year: 2024, position: { top: 20, left: 70 }, 
     script: "",
     script2: "Personal project / 297x420mm, 120g / One color painting Slik screen",
-    images: [frame33], 
-    icons: [goldicon1, goldicon2], // 상단 아이콘
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527295/frame33_cwbash.svg"], 
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], // 상단 아이콘
     category: "Graphic design", 
     description: "Based on the quote by Dutch product designer Bertjan Pot, I created two versions to visualize the raw and timeworn beauty of things — a printed version and one using printmaking techniques.", 
     description2: "Using monotype, a printmaking method that captures objects as they are, I designed posters by pressing discarded items and natural materials directly onto the surface."},
@@ -92,8 +45,8 @@ export const projects = [
     year: 2024, position: { top: 25, left: 60 },
     script: "/",
     script2: "Personal project / 290x290mm, 200g / One color printing",
-    images: [frame36],
-    icons: [goldicon1, goldicon2], // 상단 아이콘
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762536373/7001_s661ft.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762536376/7002_jszoap.svg"],
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], // 상단 아이콘
     category: "Editorial design",
     description: "『700-08』 is a book that analyzes the art book collection of Ewha Womans University’s Central Library from a bibliographic classification perspective.", 
     description2: "The title refers to the shelf number assigned to art books, focusing particularly on those classified between 700 and 708, where noticeable changes in paper quality and materiality appear.",
@@ -140,8 +93,8 @@ export const projects = [
     year: 2022, position: { top: 35, left: 45 }, 
     script: "/",
     script2: "Personal project / 1:18 / Processing",
-    images: [image143],
-    icons: [goldicon1, goldicon2], // 상단 아이콘
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529786/image_143_ovjuzi.svg"],
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], // 상단 아이콘
     category: "Video design",
     description: "The interactive video tells a story about ideals and small wishes. The narrative was designed in the format of a digital letter using Processing, and was developed by ", 
     description2: "an interactive design that allows the audience to engage with the letter's content. The goal of the project was to convey a dynamic story by reflecting the message of 'never forgetting our ideals' through diverse movements and forms."},
@@ -151,8 +104,8 @@ export const projects = [
     year: 2022, position: { top: 15, left: 30 },
     script: "/",
     script2: "Personal project / MapBox, p5.js / 297x420mm, 150g",
-    images: [frame29],
-    icons: [goldicon1, goldicon2], // 상단 아이콘
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529729/Frame29_l0fvyj.svg"],
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], // 상단 아이콘
     category: "Web + Editorial design",
     description: "Among the many streets of Seoul, I selected five areas where specific industries or social phenomena are concentrated, and planned a project to uniquely capture the city’s landscape in 2022. ", 
     description2: "To portray the vivid scenes of each street, I created web-based graphics and designed booklets that showcase the distinctive industrial stories of each district."},
@@ -164,8 +117,8 @@ export const projects = [
     title: "A Choir of Monologues", 
     year: 2024, position: { top: 10, left: 32 }, 
     script2: "Personal project / 4:23 / Adobe Ae",
-    images: [Rectangle],
-    icons: [goldicon1, goldicon2], // 상단 아이콘
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527267/Rectangle_tb1lbk.svg"],
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], // 상단 아이콘
     category: "Video design",
     description: "When countless voices overlap and gather, they grow large enough to form a single space. Sound, in this way, carries the qualities of resonance and movement. ", 
     description2: "To express this movement of sound, I layered whispering noises to create an audio composition and visualized it through motion graphics.",
@@ -177,10 +130,10 @@ export const projects = [
     number: "6", 
     title: "Typemoji", 
     year: 2025, position: { top: 10, left: 32 }, 
-    images: [frame85],
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762530678/frame39_apw3vi.svg"],
     script2: "Personal project",
     category: "Video design",
-    icons: [goldicon1, goldicon2], // 상단 아이콘
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], // 상단 아이콘
     description: "Emojis, often called the 'hieroglyphs of the 21st century,' convey emotions and symbols in an intuitive and rich way that plain text often cannot. This project involved designing emojis that reflect the form and characteristics of their corresponding", 
     description2: "typeface, ensuring they can be used widely and consistently alongside text. We subsequently designed a poster, a guidebook, and an application for these Type Emojis.",
    // 이미지 1장에 대한 텍스트 세트 배열
@@ -227,8 +180,8 @@ export const projects = [
     title: "Prova", 
     year: 2025, position: { top: 10, left: 32 }, 
     script2: "Personal project",
-    images: [prova1, prova2, prova3, prova4, prova5],
-    icons: [goldicon1, goldicon2], // 상단 아이콘
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527533/prova0_ftiknv.png", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527543/prova1_f3xipb.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762528692/prova2_jmgzfk.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762528944/prova3_rpjpeg.png","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529063/prova4_tjnuoq.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529068/prova5_qtuunk.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529076/prova6_ce1hk9.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529085/prova7_denwfk.svg"],
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], // 상단 아이콘
     category: "Production Brand BI/BX",
     description: "Prova is a brand that combines production (film and video production) with nova (meaning “new”), providing a comprehensive solution for film and video creation. Through firsthand experience working on film sets, I identified", 
     description2: "customers’ pain points and developed an integrated system that manages all on-site assets — from production crews and equipment to props and locations — within a single platform rather than a fragmented one.",
@@ -254,7 +207,7 @@ export const projects = [
     {
       title: "Prova Application",
       texts: ["It is an application tailored for dynamic filming environments. Using key graphics, I developed promotional content for crews and equipment that conveys the brand’s identity, creating a concept that allows users to experience the brand’s extended ecosystem.", ""],
-      position: { top: "55.5%", left: "10%" },
+      position: { top: "56.5%", left: "10%" },
       color: "#D5D5D5", // ✅ 여기에 색상 지정
       width: "500px" // ✅ 여기에 색상 지정
 
@@ -275,8 +228,8 @@ export const projects = [
     title: "Overlock", 
     year: 2024, position: { top: 10, left: 32 }, 
     script2: "Spatial design collaboration / Selected Work (19th Next-Gen Cultural Space Competition), 2024 Ewha Spotlight Award",
-    images: [frame82, frame83],
-    icons: [goldicon1, goldicon2], // 상단 아이콘
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762535334/overlock1_dgz3ex.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762535336/overlock2_dwqxd6.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762535338/overlock3_sntu0c.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762535341/overlock4_ec5ys0.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762535347/overlock5_fi13vh.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762535773/overlock0_c4g89k.png"],
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], // 상단 아이콘
     category: "Sewing & Cultural Complex Brand BI/BX",
     description: "“Overlock” refers to a seam, symbolizing a repair-focused cultural complex brand that connects the beauty of the past. The brand’s philosophy centers on layering stories to preserve", 
     description2: "bygone beauty while creating something new. I developed the brand identity and design system for the Overlock cultural complex, reflecting this philosophy.",
@@ -287,21 +240,21 @@ export const projects = [
         "The creative workshop is a space that offers repair technique workshops in collaboration with local repair experts. I designed promotional content and merchandise that incorporate various workshop concepts centered on the theme of repair, along with the brand’s key graphic element — the stitch pattern.", 
         ""
       ],
-      position: { top: "38%", left: "55%" },
+      position: { top: "39.5%", left: "55%" },
       color: "#606060",
        width: "500px"
     },
     {
       title: "Merch Shop & Cafe",
       texts: ["The Overlock merch shop, located alongside the Overlock café, offers a space where visitors can explore a variety of repair materials. Using the brand’s key graphics, I designed repair-themed merchandise and café packaging, and created an application to promote the space and its offerings.", ""],
-      position: { top: "63.5%", left: "55%" },
+      position: { top: "64.5%", left: "55%" },
       color: "#606060",
       width: "500px"
     },
     {
-      title: "Awarded at the Ewha Womans University <Spotlight Artwork>",
+      title: "Awarded at the Ewha <Spotlight This Work> 2024",
       texts: ["Following this project, it was recognized as an outstanding work in the <Spotlight on This Artwork> program at Ewha Womans University, showcased on campus, and awarded a scholarship. Through close collaboration and dedication from a spatial-design–focused team member, the project achieved a meaningful outcome in spatial branding.", ""],
-      position: { top: "89%", left: "8%" },
+      position: { top: "89.8%", left: "8%" },
       color: "#606060",
       width: "500px"
 
@@ -321,8 +274,8 @@ export const projects = [
     title: "Long-Talk Film Festival", 
     year: 2024, position: { top: 10, left: 32 }, 
     script2: "Design team collaboration / Held at KT&G Sangsangmadang, Hongdae",
-    images: [longtalk1, longtalk2, longtalk3, longtalk4, longtalk5, longtalk6],
-    icons: [goldicon1, goldicon2],
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534542/longtalk1_tppgtc.png", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534738/longtalk2_nkqvfj.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534653/longtalk3_g0l978.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534666/longtalk4_am1gmk.png","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534675/longtalk5_lis4rl.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534682/longtalk6_m3nupy.png"],
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"],
     category: "Flim Festival BI/BX",
     description: "The Long Talk Film Festival begins with the idea of uncovering the unseen side of modern society — a world where even long messages are reduced to three lines and two-hour stories are edited down to thirteen minutes.", 
     description2: "Going beyond disconnection, the festival aims to gather the unspoken words of reality and share them through the language of film. Inspired by the concept of a relay novel, it presents creative works that explore various social issues from multiple perspectives.",
@@ -366,8 +319,8 @@ export const projects = [
     title: "Unsocialized Residue", 
     script2: "Personal project / Cotton canvas and silkscreen, 2000 mm / Exhibited at Chachati Club, Changsin-dong in 2024",
     year: 2023, position: { top: 10, left: 32 }, 
-    images: [residue1, residue2, residue3, residue4, residue5, residue6],
-    icons: [goldicon1, goldicon2],
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762531546/residue1_mshhtn.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762531685/residue2_t1ktlk.png", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534108/residue3_irephg.png", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534112/residue4_t12wpu.png", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762532240/Group573_bzmqlr.png", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762533783/residue6_ficlof.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762533785/residue7_gxkmkj.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762533789/residue8_r2ayjs.svg" ],
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"],
     category: "Graphic Design",
     description: "“Unsocialized Residue” is an installation project that documents the “residue” or “afterimages” left with me each day. These traces serve no practical purpose, yet through recording them, I aim to express the passage of my time.", 
     description2: "Using silkscreen and printmaking techniques, I captured objects and typography as they are, preserving these afterimages as visual records.",
@@ -378,7 +331,7 @@ export const projects = [
         "This project is based on a process that combines typography with analog painterly techniques to repeatedly imprint letters. It captures and records the letters and textures encountered each day, visualizing the passage of time through linearly accumulated patterns. By layering textures and typography step by step, it materializes the time that has passed.", 
         ""
       ],
-      position: { top: "12%", left: "6%" },
+      position: { top: "12.5%", left: "6%" },
       color: "#606060",
       width: "500px" // ✅ 여기에 색상 지정
     },
@@ -392,7 +345,7 @@ export const projects = [
     {
       title: "<The Sharpness Rolls> 2024 / Chachati Club, Seoul",
       texts: ["The work was exhibited at the group show “The Sharpness Rolls” held at Chachati Club in Changsin-dong, where I showcased prints created directly on fabric. In addition to being an exhibiting artist, I also participated as a designer, creating the official poster for the exhibition.", ""],
-      position: { top: "43%", left: "6%" },
+      position: { top: "41.5%", left: "6%" },
       color: "#606060",
       width: "500px" // ✅ 여기에 색상 지정
 
@@ -412,8 +365,8 @@ export const projects = [
     title: "We are Aliens", 
     script2: "Personal project",
     year: 2022, position: { top: 10, left: 32 }, 
-    icons: [goldicon1, goldicon2], 
-    images: [alien1, alien2, alien3, alien4],
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], 
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762531168/alien1_t0m001.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762531174/alien2_x6yhpp.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762531185/alien3_xavqbz.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762531371/alien4_fbuja6.png"],
     category: "Graphic Design",
     description: "To express the idea that we, with all our diverse shapes and forms, might be the universe's true strange life forms—perhaps even the real aliens—we created a series of wearable slogans.", 
     description2: "I experimentally conveyed this uncanny experience to people by wearing the slogans and wandering around Olympic Park in Seoul.",
@@ -457,8 +410,8 @@ export const projects = [
     title: "Lumi", 
     year: 2024, position: { top: 10, left: 32 },
     script2: "Personal project",
-    icons: [goldicon1, goldicon2],  
-    images: [frame106],
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"],  
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762530697/Frame_106_r3gx4o.svg"],
     category: "UXUI Design",
     description: "Lumi is a slow social application designed to help users record and recognize sensory distance in their daily lives. Unlike social media platforms that emphasize physical proximity or fast-paced connections, Lumi aims to foster more sustainable relationships. By recording emotional and sensory interactions beyond physical distance,", 
     description2: "users can better perceive the depth of their connections. Lumi provides an environment that encourages users to focus on the relationships that truly matter — whether in love, work, or everyday life. The project focused on designing essential features through service planning, PDI user research, and concept implementation.",
@@ -500,8 +453,8 @@ export const projects = [
     number: "+", 
     title: "Art History Essay", 
     year: 2025, position: { top: 10, left: 32 },
-    icons: [goldicon1, goldicon2],  
-    images: [frame107, frame108, frame109, frame111, frame110, frame112],
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"],  
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527561/essay1_dsv4qq.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527572/essay2_ldhpi3.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527593/essay_3_xlo7pm.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527615/essay_4_hqevyo.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527627/essay_5_trnb3v.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527627/essay_5_trnb3v.svg"],
     category: "Studies in Visual Culture",
     description: "These writings are essays in which I reinterpret artworks and culture through the study of art history. I have always enjoyed expanding my thoughts through writing, and it has been an important way for me to understand social and cultural phenomena related to art history. Studying art history allowed", 
     description2: "me to view art and visual culture within broader social and philosophical contexts, and I found it fascinating to apply these perspectives to real-world cases. Writing has also been a meaningful process for me as a designer, helping me collect and organize inspiration.",
@@ -543,6 +496,7 @@ export const projects = [
 export const projectsKo: Projectsko[] = [
   {
     id: "1",
+    number: "1",
     title: "아름다움에 대하여",
     year: 2024,
     script: "",
@@ -551,12 +505,13 @@ export const projectsKo: Projectsko[] = [
     description3: "네덜란드 제품 디자이너, 베르트얀 핏의 아름다움에 대한 명언을 바탕으로 오래된 것들과 날 것의 아름다움을 시각화하기 위해 출력물 버전과 판화 기법을 활용한 버전, 2가지를 제작하였습니다.",
     description4: "사물을 있는 그대로 찍어내는 판화 기법인 ‘모노타입(Monotype)’을 활용하여 버려진 물건과 자연물을 찍어서 포스터를 디자인했습니다.",
     description5: "한글",
-    icons: [goldicon1, goldicon2], // 상단 아이콘
-    images: [frame33],
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], // 상단 아이콘
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527295/frame33_cwbash.svg"],
   
   },
     {
     id: "2",
+    number: "2",
     title: "700-08",
     year: 2024,
     script: "",
@@ -565,8 +520,8 @@ export const projectsKo: Projectsko[] = [
     description3: "『700-08』은 이화여자대학교의 중앙도서관 예술 서적을 층서학적인 관점에서 분석하는 책입니다. 해당 제목은 예술 서적의 서고 번호를 가리키며 비교적 책 종이의 변화가 뚜렷하게 나타난 700번부터 08번까지의 책들을 중점적으로 다루었습니다.",
     description4: "책에 대한 물성적 변화에 대한 인포그래픽을 제작하고, 이를 형태가 변화해온 지질과 같이 시각화하여 부드럽고, 단단한 책의 면모를 표현합니다.",
     description5: "한글",
-    icons: [goldicon1, goldicon2], 
-    images: [frame36],
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], 
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762536373/7001_s661ft.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762536376/7002_jszoap.svg"],
     textSets: [
     {
       title: "",
@@ -607,6 +562,7 @@ export const projectsKo: Projectsko[] = [
   },
     {
     id: "3",
+    number: "3",
     title: "나의 이상에게",
     year: 2022,
     script: "",
@@ -615,11 +571,12 @@ export const projectsKo: Projectsko[] = [
     description3: "이 인터랙티브 영상은 작은 이상과 소망에 대한 열망을 담아낸 디지털 편지입니다. 프로세싱을 활용하여 인터랙션을 통해 관객들이 편지의 내용에 간접적으로 참여하며 이야기를 따라갈 수 있도록 구조를 설계하였습니다.",
     description4: "이러한 디지털 편지는 '이상을 영원히 잊지 말자' 라는 메시지를 반영하여 종이 편지와는 다른 가변적인 방식으로 전달하는 것이 목표였습니다. 다양한 형태와 움직임을 표현하고, 이를 시간과 공간적 변화에 따른 개입없이 오랫동안 보관할 수 있는 영상의 이야기 형태로 만들어냈습니다.",
     description5: "각 이야기는 디지털의 흐름 속에서 차례로 전개되며 완성됩니다. 편지의 내용을 서로 다른 추상적 움직임과 리듬으로 시각화하여 이야기를 표현합니다. 내용이 점점 진행되고, 클릭을 할 수록 더 커진 움직임으로 전개됩니다.",
-    icons: [goldicon1, goldicon2], 
-    images: [image143]
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], 
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529786/image_143_ovjuzi.svg"]
   },
     {
     id: "4",
+    number: "4",
     title: "서울왜곡",
     year: 2022,
     script: "",
@@ -628,11 +585,12 @@ export const projectsKo: Projectsko[] = [
     description3: "서울의 수많은 거리 중, 특정 산업이나 사회적 현상이 밀집된 5곳을 선정하여 2022년 서울의 특유한 모습을 담아내는 프로젝트를 기획했습니다. 거리마다 독특한 풍경을 생생하게 담아내기 위해 맵박스(Mapbox)를 활용하여 실제 지도 데이터를 활용하여 웹 그래픽을 제작하였습니다.",
     description4: "그리고 이에 대해 정확한 정보를 제공하기 위해 각 지역에서 발생된 특정 사회 문화적 현상에 대한 설명과 현상이 포화된 이유, 그로 인해 만들어진 특색있는 모습을 담은 책자를 디자인하였습니다.",
     description5: "과도하게 포화된 서울의 각 지역을 왜곡된 형태로 재해석하여 시각화한 웹 페이지입니다. 실제 각 지역을 답사하며 특징적인 모습을 분석하고, 이를 바탕으로 대표 키워드 3가지를 도출하여 표현했습니다. 콜라쥬의 방식을 통해 복합적이고, 다원적인 지역의 특징을 나타내고자 하였습니다.",
-    icons: [goldicon1, goldicon2], 
-    images: [frame29]
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], 
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529729/Frame29_l0fvyj.svg"]
   },
     {
     id: "5",
+    number: "5",
     title: "혼잣말의 합창",
     year: 2025,
     script: "",
@@ -641,11 +599,12 @@ export const projectsKo: Projectsko[] = [
     description3: "수많은 목소리들이 겹치고 모이면, 하나의 공간을 형성할 만큼 커집니다. 이렇듯 소리에게는 울림과 움직임이라는 특성을 가지고 있습니다. 이러한 소리의 움직임을 표현하기 위해 다양한 공간에서 속삭이는 소리를 직접 녹음하고 중첩시켜 영상 소리를 제작하였습니다.",
     description4: "그리고 이렇게 서로 쌓인 소리들을 글자의 움직임으로 표현했습니다. 여기서 글자는 소리의 의미보다는 소리가 가진 움직임과 울림을 표현하는 매개체로 사용하였습니다. ",
     description5: "여러 사람의 목소리가 겹쳐 들리는 울림이 큰 공간에서 직접 말소리를 녹음하여 영상을 제작했습니다. 큰 공간에서 소리를 들을 때 점차 분해되고 해체되는 소리의 특성을 시각화하여, 그 공간감을 표현합니다.",
-    icons: [goldicon1, goldicon2], 
-    images: [Rectangle]
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], 
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527267/Rectangle_tb1lbk.svg"]
   },
    {
     id: "6",
+    number: "6",
     title: "타입 이모지",
     year: 2025,
     script: "",
@@ -690,11 +649,12 @@ export const projectsKo: Projectsko[] = [
 
     },
   ],
-    icons: [goldicon1, goldicon2], 
-    images: [frame85]
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], 
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762530678/frame39_apw3vi.svg"]
   },
   {
     id: "7",
+    number: "7",
     title: "프로바",
     year: 2025,
     script: "",
@@ -703,11 +663,11 @@ export const projectsKo: Projectsko[] = [
     description3: "Prova는 production(영화 및 영상 제작)과 nova(새로움)을 결합한 이름으로, 영화 및 영상 제작에서 필요한 하나의 솔루션을 제공하는 브랜드입니다. 직접 영화 촬영장에서 일을 해보며 고객들의 페인 포인트를 파악하고",
     description4: "분산된 시스템이 아닌 통합형 솔루션으로 촬영 크루와 장비, 소품, 로이케이션까지 현장의 모든 에셋을 제공합니다. 브랜드 기획부터 아이덴티티의 시각 시스템을 개발하였습니다. ",
     description5: "",
-    icons: [goldicon1, goldicon2], 
-    images: [prova1, prova2, prova3, prova4, prova5],
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], 
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527533/prova0_ftiknv.png", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527543/prova1_f3xipb.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762528692/prova2_jmgzfk.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762528944/prova3_rpjpeg.png","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529063/prova4_tjnuoq.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529068/prova5_qtuunk.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529076/prova6_ce1hk9.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529085/prova7_denwfk.svg"],
         textSets: [
     {
-      title: "",
+      title: "Prova BI",
       texts: [
         "촬영 현장을 도와주는 브랜드의 기능을 담아 어플리케이션에 응용될 수 있는 로고 바리에이션과 키 그래픽을 디자인하였습니다. 카메라의 화면 중심을 잡는 초점 기호에서 모티프를 얻어 브랜드의 '효율 / 큐레이션 / 협력 / 지속성 / 접근성' 이라는 5가지 핵심 가치를 전달합니다.", 
         ""
@@ -719,14 +679,14 @@ export const projectsKo: Projectsko[] = [
     {
       title: "Prova Website",
       texts: ["촬영 장비 및 소품 등 촬영에 필요한 물품을 대여하고 운송 서비스를 예약할 수 있는 웹사이트를 디자인하였습니다. 촬영 장비 대여 현황이나 재고를 살펴볼 수 있도록 정보를 제공하고, 장비 종류 및 기능에 대한 상세한 설명을 제공하여 처음 접하는 사람들에게도 어려움 없이 대여할 수 있도록 합니다.", ""],
-      position: { top: "45.5%", left: "10%" },
+      position: { top: "45%", left: "10%" },
       color: "#D5D5D5",
       width: "500px"
     },
     {
       title: "Prova Application",
       texts: ["유동적인 촬영 현장에 필요한 어플리케이션을 디자인하였습니다. 키그래픽을 활용하여 브랜드의 아이덴티티를 전달할 수 있는 촬영 크루나 장비 홍보 콘텐츠를 제작하여 브랜드의 확장된 시스템을 경험할 수 있도록 컨셉을 설계하였습니다.", ""],
-      position: { top: "56%", left: "10%" },
+      position: { top: "56.5%", left: "10%" },
       color: "#D5D5D5", // ✅ 여기에 색상 지정
       width: "500px" // ✅ 여기에 색상 지정
 
@@ -734,7 +694,7 @@ export const projectsKo: Projectsko[] = [
     {
       title: "",
       texts: ["구체적인 브랜드 제품으로는 촬영 장비와 카드, 운송 트럭, SNS 콘텐츠를 기반하여 브랜드의 어플리케이션 시스템을 디자인하였습니다. 브랜드의 키 그래픽을 다양한 스케일에 적용하여 유연하고 확장된 브랜드 컨셉을 전달하고자 했습니다.", ""],
-      position: { top: "74%", left: "55%" },
+      position: { top: "74.5%", left: "55%" },
       color: "#606060",
       width: "500px"
     },
@@ -742,6 +702,7 @@ export const projectsKo: Projectsko[] = [
   },
     {
     id: "8",
+    number: "8",
     title: "오버로크",
     year: 2024,
     script: "",
@@ -750,8 +711,8 @@ export const projectsKo: Projectsko[] = [
     description3: "Overlock는 이음새를 뜻하는 단어로, 옛것의 아름다움을 잇는 수선 복합문화공간 브랜드입니다. 상권 위축으로 인해 사라진 이화여대길의 수선골목을 회복하고, 수선의 가치를 전달할 수 있는 복합문화공간을 기획하였습니다. 지나간 아름다움을 보존하며 새로움을 창조하는 브랜드의 철학을",
     description4: "설계하였고, 복합문화공간의 브랜드 아이덴티티 및 디자인 시스템을 개발하였습니다. 이 프로젝트는 실제 이화여대길의 유휴공간을 기반으로 기획되어 공간 디자인을 함께 설계하였고, 이화여대에서 우수 작품으로 선정되어 전시를 하게 되었습니다. ",
     description5: "",
-    icons: [goldicon1, goldicon2], 
-    images: [frame82, frame83],
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], 
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762535334/overlock1_dgz3ex.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762535336/overlock2_dwqxd6.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762535338/overlock3_sntu0c.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762535341/overlock4_ec5ys0.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762535347/overlock5_fi13vh.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762535773/overlock0_c4g89k.png"],
         textSets: [
     {
       title: "Creative Workshop",
@@ -759,14 +720,14 @@ export const projectsKo: Projectsko[] = [
         "크레이티브 워크샵은 지역 수선 전문가들과 함께 수선 기법에 대한 워크샵을 제공하는 공간입니다. 수선을 주제로 한 워크샵의 다양한 컨셉과 브랜드의 키 그래픽인 스티치 패턴을 담아 사이니지, 홍보 콘텐츠와 굿즈를 디자인하였습니다.", 
         ""
       ],
-      position: { top: "38%", left: "55%" },
+      position: { top: "39.5%", left: "55%" },
       color: "#606060",
       width: "500px"
     },
     {
       title: "Merch Shop & Cafe",
       texts: ["오버로크 머치샵에서는 오버로크 카페와 함께 다양한 수선 자재들을 살펴볼 수 있는 공간입니다. 브랜드의 키 그래픽을 활용하여 수선 자재와 관련된 굿즈와 카페 패키지를 디자인하여 공간을 홍보할 수 있는 어플리케이션을 제작하였습니다.", ""],
-      position: { top: "62.8%", left: "55%" },
+      position: { top: "64.5%", left: "55%" },
       color: "#606060",
       width: "500px"
 
@@ -774,7 +735,7 @@ export const projectsKo: Projectsko[] = [
     {
       title: "Awarded at the Ewha <Spotlight Artwork> 2024",
       texts: ["해당 프로젝트는 이후 이화여대에서 <이 작품을 주목해라> 에서 우수 작품으로 선정되어 교내에서 전시를 하고, 장학금을 수여했습니다. 공간 디자인 동기와 깊은 협업과 노력으로 공간 브랜딩에서 뜻깊은 결과를 맺을 수 있었습니다.", ""],
-      position: { top: "89.5%", left: "8%" },
+      position: { top: "90%", left: "8%" },
       color: "#606060", // ✅ 여기에 색상 지정
       width: "500px"
 
@@ -791,6 +752,7 @@ export const projectsKo: Projectsko[] = [
   },
    {
     id: "9",
+    number: "9",
     title: "제 1회 롱톡 영화제",
     year: 2024,
     script: "",
@@ -799,8 +761,8 @@ export const projectsKo: Projectsko[] = [
     description3: "홍대 상상마당에서 개최된 소통영화제 롱톡은 긴 글은 세줄로 줄이고, 또 2시간을 편집해 13분으로 재생하는 것이 미학이 된 현대 사회의 이면을 발견하는 것에서부터 출발하였습니다. 단절을 넘어서 현실에서 꺼내지 못한 말들을 모아 영화의 방식으로 함께 이야기하고자 개최되었습니다.",
     description4: "소통영화제에서 디자인팀장을 맡아 영화제 아이덴티티 디자인을 담당하였고, 영화제의 릴레이소설을 모티브로 하여 모션, GV 화면에 적용할 작업을 진행하였습니다. 디자인은 다양한 팀원들과의 협업 가운데 일관된 작업 방식이 중요하다는 것을 알게 되었던 프로젝트였습니다.",
     description5: "",
-    icons: [goldicon1, goldicon2], 
-    images: [longtalk1, longtalk2, longtalk3, longtalk4, longtalk5, longtalk6],
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], 
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534542/longtalk1_tppgtc.png", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534738/longtalk2_nkqvfj.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534653/longtalk3_g0l978.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534666/longtalk4_am1gmk.png","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534675/longtalk5_lis4rl.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534682/longtalk6_m3nupy.png"],
         textSets: [
     {
       title: "Logo Design",
@@ -838,6 +800,7 @@ export const projectsKo: Projectsko[] = [
   },
   {
     id: "10",
+    number: "10",
     title: "순수한 잔여물",
     year: 2023,
     script: "",
@@ -846,8 +809,8 @@ export const projectsKo: Projectsko[] = [
     description3: "<순수한 잔여물: Unsocialized Residue>라는 작업은 매일 저에게 남는 '잔재' 또는 '잔상'을 기록하는 설치형 프로젝트입니다. 이 잔상은 어떤 실용적인 목적을 갖고 있지는 않지만, 그것들을 기록함으로써 저의 시간을",
     description4: "표현하고자 합니다. 실크스크린 기법과 판화를 통해 사물과 타이포그래피를 있는 그대로를 담아내어 잔상을 기록했습니다.",
     description5: "",
-    icons: [goldicon1, goldicon2], 
-    images: [residue1, residue2, residue3, residue4, residue5, residue6],
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], 
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762531546/residue1_mshhtn.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762531685/residue2_t1ktlk.png", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534108/residue3_irephg.png", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534112/residue4_t12wpu.png", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762532240/Group573_bzmqlr.png", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762533783/residue6_ficlof.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762533785/residue7_gxkmkj.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762533789/residue8_r2ayjs.svg"],
         textSets: [
     {
       title: "Background",
@@ -855,14 +818,14 @@ export const projectsKo: Projectsko[] = [
         "이 프로젝트는 타이포그래피와 아날로그 회화적 기법을 결합하여 글자를 반복적으로 찍어내는 작업을 기반으로 합니다. 매일 마주한 글자와 질감을 포착하고 기록하며, 선형적으로 쌓인 패턴을 통해 시간을 시각화합니다. 질감과 타이포그래피를 한 층씩 쌓아올려, 지나온 시간을 형상화합니다.", 
         ""
       ],
-      position: { top: "12%", left: "5%" },
+      position: { top: "13%", left: "5%" },
       color: "#606060",
       width: "470px" // ✅ 여기에 색상 지정
     },
     {
       title: "<뾰족함이 굴러가네> 2024",
       texts: ["이 프로젝트를 통해 창신동 차차티 클럽 전시관에서 열린 <뾰족함이 굴러가네> 단체전에 참여하였고, 천에 직접 프린팅한 작업을 전시했습니다. 또한 전시 참여자이자 디자이너로 참여하여 해당 전시 포스터를 디자인하였습니다.", ""],
-      position: { top: "43%", left: "6%" },
+      position: { top: "41.5%", left: "6%" },
       color: "#606060",
       width: "500px" // ✅ 여기에 색상 지정
 
@@ -878,7 +841,7 @@ export const projectsKo: Projectsko[] = [
     {
       title: "",
       texts: ["잔여물은 선형의 패턴 이전에 타이포그래피를 실제 사물의 질감으로 직접 찍어내는 작업을 통해 시작되었습니다. 이러한 에스키스를 통해 타이포그래피를 질감과 함께 구체화시키는 방법을 모색하였고, 이를 함께 전시하였습니다.", ""],
-      position: { top: "82%", left: "6%" },
+      position: { top: "81.5%", left: "6%" },
       color: "#606060",
       width: "500px" // ✅ 여기에 색상 지정
 
@@ -887,6 +850,7 @@ export const projectsKo: Projectsko[] = [
   },
   {
     id: "11",
+    number: "11",
     title: "낯선 존재",
     year: 2022,
     script: "",
@@ -895,8 +859,8 @@ export const projectsKo: Projectsko[] = [
     description3: "서로 다른 모양을 지닌 사람들. 인간이야말로 우주의 진정한 낯선 생명체이면서도 외계인이 아닐까라는 관점에서 시작된 실험적인 커뮤니케이션 프로젝트입니다. 사람들 사이에서 거리 두기가 익숙해진 코로나 시절,",
     description4: "타자의 관점에서 바라본 우리의 낯선 모습을 표현하기 위해서 입을 수 있는 슬로건을 제작하였습니다. 슬로건을 입고 서울 시내의 올림픽 공원에 돌아다니며 사람들에게 낯선 소통 방식을 통한 경험을 실험적으로 전달하고자 하였습니다.",
     description5: "",
-    icons: [goldicon1, goldicon2], 
-    images: [alien1, alien2, alien3, alien4],
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], 
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762531168/alien1_t0m001.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762531174/alien2_x6yhpp.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762531185/alien3_xavqbz.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762531371/alien4_fbuja6.png"],
         textSets: [
     {
       title: "",
@@ -936,6 +900,7 @@ export const projectsKo: Projectsko[] = [
   },  
   {
     id: "12",
+    number: "12",
     title: "루미",
     year: 2024,
     script: "",
@@ -944,8 +909,8 @@ export const projectsKo: Projectsko[] = [
     description3: "루미라는 서비스는 일상 속 감각적 거리를 기록하며 인식할 수 있도록 돕는 슬로우 소셜 어플입니다. SNS처럼 빠른 관계 형성을 강조하는 대신, 루미는 지속 가능한 관계의 형성을 목표로 설계되었습니다. 사용자는 물리적 거리를 넘어 서로 간의 감정적·감각적 상호작용을 기록함으로써",
     description4: "관계의 깊이를 체감할 수 있습니다. 루미는 사랑, 동료, 비즈니스 등 다양한 인간관계 속에서 진정으로 소중한 관계에 집중할 수 있는 환경을 제공합니다. 서비스 기획부터 PDI 사용자 리서치, 컨셉 구현을 중심으로 필요한 기능을 설계하는 것에 집중하여 진행하였습니다.",
     description5: "",
-    icons: [goldicon1, goldicon2], 
-    images: [frame106],
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], 
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762530697/Frame_106_r3gx4o.svg"],
         textSets: [
     {
       title: "Background",
@@ -983,6 +948,7 @@ export const projectsKo: Projectsko[] = [
   {
 
     id: "13",
+    number: "13",
     title: "미술사 에세이",
     year: 2025,
     script: "",
@@ -991,8 +957,8 @@ export const projectsKo: Projectsko[] = [
     description3: "이 글들은 미술사를 공부하며 작품과 문화를 재해석한 에세이입니다. 평소에도 글쓰기를 통해 생각을 확장하는 일을 좋아했고, 이는 미술사와 연관된 사회·문화적 현상을 이해하는 데 중요한 방법이었습니다. 특히 미술사를 공부하면서 사회적·철학적 맥락 속에서 미술과 시각문화를 바라볼 수 있었고,",
     description4: "이러한 관점을 실제 사례에 적용해 분석하는 과정이 무척 흥미로웠습니다. 또한 글쓰기는 디자이너로서 영감을 수집하고 정리하는 하나의 과정이기도 했습니다.",
     description5: "",
-    icons: [goldicon1, goldicon2], 
-    images: [frame107, frame108, frame109, frame111, frame110, frame112],
+    icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], 
+    images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527561/essay1_dsv4qq.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527572/essay2_ldhpi3.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527593/essay_3_xlo7pm.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527615/essay_4_hqevyo.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527627/essay_5_trnb3v.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527627/essay_5_trnb3v.svg"],
         textSets: [
     {
       title: "",

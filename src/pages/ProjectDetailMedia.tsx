@@ -49,7 +49,7 @@ const ProjectDetailMedia: React.FC<ProjectDetailMediaProps> = ({
       {/* 📝 설명 */}
       {finalDescription && (
         <div className="mt-4 ml-auto w-[460px] text-left mr-[50px] mb-12">
-          <p className="text-md text-muted-foreground leading-relaxed">
+          <p className="text-md text-muted-foreground leading-[1.8]">
             {finalDescription}
           </p>
         </div>
