@@ -60,7 +60,7 @@ const Index = () => {
           {/* Left */}
           <div className="space-y-1">
             <h1 className="text-3xl md:text-2xl font-normal">Eun Kyeol Kim</h1>
-            <p className="text-sm md:text-base text-gray-500 w-[350px] leading-tight">
+            <p className="text-sm md:text-base text-gray-500 w-[200px] leading-tight">
               Ewha Womans University Visual Design major,
               <br />
               double major in Art History
