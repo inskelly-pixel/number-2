@@ -132,10 +132,10 @@ export const projects = [
     year: 2025, position: { top: 10, left: 32 }, 
     images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762530678/frame39_apw3vi.svg"],
     script2: "Personal project",
-    category: "Video design",
+    category: "Graphic Design",
     icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], // 상단 아이콘
     description: "Emojis, often called the 'hieroglyphs of the 21st century,' convey emotions and symbols in an intuitive and rich way that plain text often cannot. This project involved designing emojis that reflect the form and characteristics of their corresponding", 
-    description2: "typeface, ensuring they can be used widely and consistently alongside text. We subsequently designed a poster, a guidebook, and an application for these Type Emojis.",
+    description2: "typeface, ensuring they can be used widely and consistently alongside text. I subsequently designed a poster, a guidebook, and an application for these Type Emojis.",
    // 이미지 1장에 대한 텍스트 세트 배열
   textSets: [
     {
@@ -144,7 +144,7 @@ export const projects = [
         "This is a guidebook that introduces the concept, design process, and usage of type emojis — emojis that are always connected to text. The guide consists of five volumes, each dedicated to a different font, all following the same structure. It aims to help users effectively utilize type emojis in their work.",
         ""
       ],
-      position: { top: "22.5%", left: "10%" }, // 반응형 가능하게 % 사용
+      position: { top: "25%", left: "10%" }, // 반응형 가능하게 % 사용
       color: "#CCCCCC",
       width: "500px"
 
@@ -152,7 +152,7 @@ export const projects = [
     {
       title: "Typemoji NFC Tag",
       texts: ["An NFC tag is attached to the top left corner of the guidebook, allowing users to access a website where they can test different types of emojis and download them by simply tapping their mobile device. Along with the guidebook, an interactive environment was created where users can try out the emojis with text in a chat interface.", ""],
-      position: { top: "53%", left: "10%" },
+      position: { top: "59%", left: "10%" },
       color: "#CCCCCC",
       width: "500px"
 
@@ -160,14 +160,14 @@ export const projects = [
     {
       title: "Typemoji Website",
       texts: ["I designed a website UI that allows users to test type emojis alongside fonts on PC and download five different type emoji packages. The website was created to provide updates and information about type emojis not only in mobile environments but also on PC.", ""],
-      position: { top: "76.5%", left: "10%" },
+      position: { top: "86.5%", left: "10%" },
       color: "#CCCCCC",
       width: "500px"
 
     },
     {
-      title: "Typemoji Welcomekit",
-      texts: ["When purchasing type emojis for the first time, users receive a gift kit that includes an emoji guidebook, stickers, and a notepad. The kit is designed as an application-like structure, allowing users to explore and experience the emojis in offline environments as well.", ""],
+      title: "",
+      texts: ["", ""],
       position: { top: "89.5%", left: "10%" },
       color: "#CCCCCC",
       width: "500px"
@@ -281,19 +281,19 @@ export const projects = [
     description2: "Going beyond disconnection, the festival aims to gather the unspoken words of reality and share them through the language of film. Inspired by the concept of a relay novel, it presents creative works that explore various social issues from multiple perspectives.",
     textSets: [
     {
-      title: "Logo Design",
+      title: "Identity Design",
       texts: [
         "Although each program in the film festival tells a different story, they all come together to form one collective narrative that connects society. Based on this idea, I developed the festival’s branding concept using the motif of a puzzle. Four puzzle-shaped symbols with soft, rounded forms were designed to represent the four sections — beginning, conflict, climax, and resolution.", 
         ""
       ],
-      position: { top: "12.5%", left: "8%" },
+      position: { top: "11.5%", left: "8%" },
       color: "#606060",
       width: "500px" // ✅ 여기에 색상 지정
     },
     {
       title: "Motion Graphic",
       texts: ["I designed motion graphics for four programs using a puzzle symbol as the key motif. Created for the program’s opening screens, each motion graphic incorporates puzzle elements that represent the unique identity of each section.", ""],
-      position: { top: "25%", left: "8%" },
+      position: { top: "22.5%", left: "8%" },
       color: "#606060", // ✅ 여기에 색상 지정
       width: "500px"
     },
@@ -377,7 +377,7 @@ export const projects = [
         "This slogan was inspired by crop circles, which were once believed to be markings created by extraterrestrials. Although later revealed to be uniquely human-made patterns, crop circles remain one of the most ironic examples of misinterpreted phenomena. Based on this case, the project explores how human perception assigns meaning to the unfamiliar and becomes an experiment in self-reflection through the experience of strangeness.", 
         ""
       ],
-      position: { top: "29.5%", left: "55%" },
+      position: { top: "27%", left: "55%" },
       color: "#606060",
       width: "500px" // ✅ 여기에 색상 지정
     },
@@ -398,7 +398,7 @@ export const projects = [
     {
       title: "",
       texts: ["In practice, slogans were worn during experiments in public spaces, and filming was conducted while walking around. The work aimed to reveal human interaction, whether by quietly sitting and engaging with people indirectly or by moving through the space and encountering strangers.", ""],
-      position: { top: "58%", left: "55%" },
+      position: { top: "57%", left: "55%" },
       color: "#606060",
       width: "500px"
 
@@ -611,23 +611,23 @@ export const projectsKo: Projectsko[] = [
     script2: "개인 프로젝트",
     category: "그래픽 디자인",
     description3: "21세기 상형문자인 ‘이모지(Emoji)’는 텍스트가 전달하기 어려운 감정이나 기호를 직관적이고 풍부한 방식으로 전달합니다. 해당 프로젝트는 이모지와 글자가 폭넓고 일관성 있게 활용될 수 있도록 글꼴의 형태와 특징을 반영하여 이모지를 디자인했습니다.",
-    description4: "타입 이모지 종류에 따른 소개하는 포스터 20종과 이모지를 어플을 통해 테스트를 해볼 수 있는 가이드북과 어플리케이션을 제작하였습니다.",
+    description4: "산세리프, 세리프, 슬랩세리프, 블랙레터, 지오매트릭 계열 서체 5종을 선정하여 타입 이모지 종류에 따른 소개하는 포스터 20종과 이모지를 어플을 통해 테스트를 해볼 수 있는 가이드북과 어플리케이션을 제작하였습니다.",
     description5: "",
     textSets: [
     {
       title: "Typemoji Guidebook",
       texts: [
-        "글자와 늘 붙어있는 이모지. 타입이모지의 기획 배경부터 디자인 프로세스 및 사용 방법에 대한 정보를 담은 가이드 북입니다. 각각의 서체별 타입이모지에 대해 5권으로 이루어져 있으며 모두 동일한 목차로 구성됩니다. 사용자가 이모지를 활용하는 데에 도움을 줄 수 있도록 합니다. ", 
+        "글자와 언제나 함께하는 타입이모지에 대한 기획 배경부터 디자인 프로세스 및 사용 방법에 대한 정보를 담은 가이드 북입니다. 각각의 서체별 타입이모지에 대해 5권으로 이루어져 있으며 모두 동일한 목차로 구성됩니다. 사용자가 이모지를 활용하는 데에 도움을 줄 수 있도록 합니다. ", 
         ""
       ],
-      position: { top: "22.5%", left: "10%" }, // 반응형 가능하게 % 사용
+      position: { top: "25%", left: "10%" }, // 반응형 가능하게 % 사용
       color: "#CCCCCC",
       width: "500px"
     },
     {
       title: "Typemoji App",
       texts: ["가이드 북 좌측 상단에 NFC 태그를 달아 모바일 기기를 가까이 댔을 때 이모지를 종류별로 테스트해볼 수 있고, 다운로드를 받을 수 있는 사이트를 제공합니다. 가이드 북과 함께 이모지를 대화 창에서 텍스트와 함께 테스트해볼 수 있는 환경을 만들었습니다.", ""],
-     position: { top: "53%", left: "10%" },
+     position: { top: "59.5%", left: "10%" },
       color: "#CCCCCC",
       width: "500px"
 
@@ -635,14 +635,14 @@ export const projectsKo: Projectsko[] = [
     {
       title: "Typemoji Website",
       texts: ["PC에서 서체와 함께 타입이모지를 테스트해보며 5종의 타입이모지 패키지를 다운받을 수 있는 웹사이트의 UI를 제작했습니다. 모바일 환경 뿐만 아니라 PC 환경에서 타입 이모지에 대한 업데이트를 확인할 수 있도록 관련 웹사이트를 디자인했습니다.", ""],
-      position: { top: "76.5%", left: "10%" },
+      position: { top: "87%", left: "10%" },
       color: "#CCCCCC",
       width: "500px"
 
     },
     {
-      title: "Typemoji Welcomekit",
-      texts: ["타입 이모지 첫 구매시 선물 키트로 이모지 가이드북과 스티커, 메모장이 제공됩니다. 오프라인 환경에서도 이모지를 접해보며 경험을 확장시킬 수 있는 키트형 어플리케이션을 구성하였습니다.", ""],
+      title: "",
+      texts: ["", ""],
        position: { top: "89.8%", left: "10%" },
       color: "#CCCCCC",
       width: "500px"
@@ -765,19 +765,19 @@ export const projectsKo: Projectsko[] = [
     images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534542/longtalk1_tppgtc.png", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534738/longtalk2_nkqvfj.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534653/longtalk3_g0l978.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534666/longtalk4_am1gmk.png","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534675/longtalk5_lis4rl.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762534682/longtalk6_m3nupy.png"],
         textSets: [
     {
-      title: "Logo Design",
+      title: "Identity Design",
       texts: [
         "각 영화제 프로그램은 서로 다른 내용을 가지고 있지만 결국 사회를 연결하는 하나의 이야기를 하고 있다는 점에서 퍼즐을 모티브로 영화제 브랜딩 컨셉을 기획하였습니다. 유연하며 둥근 형태를 가진 퍼즐으로 발단, 위기, 절정, 결말 총 4가지 섹션에 맞는 4가지 종류의 심볼을 디자인하였습니다.", 
         ""
       ],
-      position: { top: "12.5%", left: "8%" },
+      position: { top: "11.5%", left: "8%" },
       color: "#606060",
       width: "500px" // ✅ 여기에 색상 지정
     },
     {
       title: "Motion Graphic",
       texts: ["퍼즐 심볼을 활용하여 4가지 프로그램에 맞는 모션 그래픽을 디자인하였습니다. 프로그램 오픈닝 스크린에 사용될 그래픽으로 각 섹션의 아이덴티티를 상징하는 퍼즐을 사용하여 모션 그래픽 패턴을 디자인하였습니다.", ""],
-       position: { top: "25%", left: "8%" },
+       position: { top: "22.5%", left: "8%" },
       color: "#606060", // ✅ 여기에 색상 지정
       width: "500px"
     },
@@ -868,7 +868,7 @@ export const projectsKo: Projectsko[] = [
         "이 슬로건은 한때 외계인의 문양이라고 알려진 '크롭 서클'에서 모티브로 얻어 제작되었습니다. '크롭 서클'은 한동안 외계인이 그린 문양이라고 알려졌지만, 인간이 만들어낸 독특한 문양으로 밝혀진 아이러니한 사례 중 하나입니다. 이러한 사례를 기반하여 인간의 인식이 얼마나 낯선 것에 의미를 부여하는지 보여주며 낯섦을 통해 인간 스스로를 돌아보게 만드는 인식의 실험이기도 합니다. ", 
         ""
       ],
-      position: { top: "29.5%", left: "55%" },
+      position: { top: "28%", left: "55%" },
       color: "#606060",
       width: "500px"
     },
@@ -915,7 +915,7 @@ export const projectsKo: Projectsko[] = [
     {
       title: "Background",
       texts: [
-        "루미라는 서비스는 공간은 물리적 영역만이 아닌 인간관계와 감정을 담아내는 풍경이다라는 에드워드 홀 인류학자의 말에서 출발하게 되었습니다. 에드워드 홀이 인간관계의 거리에 따라 서로를 감각적으로 다르게 인식한다는 점을 주목하고 물리적 거리 위주가 아닌 개인간의 주관적, 감각적 거리를 인식할 수 있는 어플을 만들면 어떨까라는 생각에서 서비스를 기획하게 되었습니다.", 
+        "루미라는 서비스는 '공간은 물리적 영역만이 아닌 인간관계와 감정을 담아내는 풍경이다'라는 에드워드 홀 인류학자의 말에서 출발하게 되었습니다. 에드워드 홀이 인간관계의 거리에 따라 서로를 감각적으로 다르게 인식한다는 점을 주목하고 물리적 거리 위주가 아닌 개인간의 주관적, 감각적 거리를 인식할 수 있는 어플을 만들면 어떨까라는 생각에서 서비스를 기획하게 되었습니다.", 
         ""
       ],
       position: { top: "10.5%", left: "8%" },
@@ -954,8 +954,8 @@ export const projectsKo: Projectsko[] = [
     script: "",
     script2: "",
     category: "시각 문화 연구",
-    description3: "이 글들은 미술사를 공부하며 작품과 문화를 재해석한 에세이입니다. 평소에도 글쓰기를 통해 생각을 확장하는 일을 좋아했고, 이는 미술사와 연관된 사회·문화적 현상을 이해하는 데 중요한 방법이었습니다. 특히 미술사를 공부하면서 사회적·철학적 맥락 속에서 미술과 시각문화를 바라볼 수 있었고,",
-    description4: "이러한 관점을 실제 사례에 적용해 분석하는 과정이 무척 흥미로웠습니다. 또한 글쓰기는 디자이너로서 영감을 수집하고 정리하는 하나의 과정이기도 했습니다.",
+    description3: "이 글들은 미술사를 공부하며 작품과 문화를 재해석한 에세이입니다. 평소에도 글쓰기를 통해 생각을 확장하는 일을 좋아했고, 이는 미술사와 연관된 사회·문화적 현상을 이해하는 데 중요한 작업이었습니다. 특히 미술사를 공부하면서 사회적·철학적 맥락 속에서 미술과 시각문화를 바라볼 수 있었고,",
+    description4: "이러한 관점을 실제 사례에 적용해 분석하는 과정이 무척 흥미로웠습니다. 또한 글쓰기는 디자이너로서 스스로 영감을 수집하고 정리하는 하나의 과정이기도 했습니다.",
     description5: "",
     icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], 
     images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527561/essay1_dsv4qq.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527572/essay2_ldhpi3.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527593/essay_3_xlo7pm.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527615/essay_4_hqevyo.svg","https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527627/essay_5_trnb3v.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762527627/essay_5_trnb3v.svg"],
@@ -971,7 +971,7 @@ export const projectsKo: Projectsko[] = [
       width: "500px"
     },
     {
-      title: "Sevice BI/BX",
+      title: "",
       texts: ["", ""],
       position: { top: "56.5%", left: "55%" },
       color: "#606060", // ✅ 여기에 색상 지정
