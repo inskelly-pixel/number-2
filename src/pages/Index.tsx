@@ -75,24 +75,24 @@ const Index = () => {
               With an integrative mindset and flexible, experimental perspective, I strive to present creative visual solutions.
             </p>
           </div>
-
-        {/* Right */}
-<div className="flex flex-col text-sm text-gray-500 space-y-2 z-10">
-  <h3 className="text-black text-2xl ml-40 mb-2">Portfolio</h3>
+{/* Right */}
+<div className="flex flex-col text-sm text-gray-500 space-y-2 z-10 max-w-[350px] ml-auto">
+  <h3 className="text-black text-2xl mb-2">Portfolio</h3>
   {projects.map((p) => (
     <Link
       key={p.id}
       to={`/project/${p.id}`}
-      className="hover:text-black transition-colors ml-40 flex items-center justify-between"
+      className="hover:text-black transition-colors flex items-center justify-between w-full"
     >
-      <span className="italic flex items-center">
-        <span className="mr-8">{p.number}</span> {/* 숫자와 title 사이 간격 */}
+      <span className="italic flex items-center gap-6">
+        <span>{p.number}</span>
         {p.title}
       </span>
-      <span className="ml-12">{p.year}</span> {/* title과 year 사이 간격 */}
+      <span className="ml-12">{p.year}</span> {/* year쪽 margin으로 간격 추가 */}
     </Link>
   ))}
 </div>
+
 
         </div>
       </header>
