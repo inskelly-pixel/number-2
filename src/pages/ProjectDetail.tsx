@@ -133,7 +133,7 @@ const ProjectDetail = () => {
     Other Projects
   </h3>
 
-  <div className="flex flex-col space-y-2 text-sm text-gray-400">
+  <div className="flex flex-col space-y-2 text-sm mr-8 text-gray-500">
     {projects
       .filter((p) => p.id !== project.id)
       .map((p) => (
@@ -142,7 +142,7 @@ const ProjectDetail = () => {
           to={`/project/${p.id}`}
           className="hover:text-black transition-colors flex items-center"
         >
-          <span className="italic flex items-center ml-[1000px] gap-2">
+          <span className="italic flex items-center ml-[1000px] gap-8">
             <span>{p.number}</span>
             {p.title}
           </span>
