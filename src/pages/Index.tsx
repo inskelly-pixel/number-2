@@ -25,18 +25,18 @@ const Index = () => {
   ];
 
   const mapLines = [
-    { topPx: 108, leftPx: 43, widthPx: 510, heightPx: 3, rotate: 0, color: 'bg-gray-400' },
-    { topPx: 855, leftPx: 43, widthPx: 1300, heightPx: 3, rotate: 0, color: 'bg-gray-400' },
-    { topPx: 270, leftPx: 500, widthPx: 750, heightPx: 3, rotate: 0, color: 'bg-gray-400' },
+    { topPx: 108, leftPx: 43, widthPx: 510, heightPx: 3, rotate: 0, color: 'bg-black' },
+    { topPx: 855, leftPx: 43, widthPx: 1300, heightPx: 3, rotate: 0, color: 'bg-black' },
+    { topPx: 270, leftPx: 500, widthPx: 750, heightPx: 3, rotate: 0, color: 'bg-black' },
     { topPx: 270, leftPx: 70, widthPx: 250, heightPx: 3, rotate: 0, color: 'bg-gray-300' },
-    { topPx: 485, leftPx: 1200, widthPx: 480, heightPx: 3, rotate: 0, color: 'bg-gray-400' },
-    { topPx: 855, leftPx: 1500, widthPx: 180, heightPx: 3, rotate: 0, color: 'bg-gray-400' },
+    { topPx: 485, leftPx: 1200, widthPx: 480, heightPx: 3, rotate: 0, color: 'bg-black' },
+    { topPx: 855, leftPx: 1500, widthPx: 180, heightPx: 3, rotate: 0, color: 'bg-black' },
     { topPx: 470, leftPx: 320, widthPx: 200, heightPx: 3, rotate: 90, color: 'bg-gray-300' },
     { topPx: 530, leftPx: 740, widthPx: 200, heightPx: 3, rotate: 45, color: 'bg-gray-300' },
-    { topPx: 270, leftPx: 1250, widthPx: 275, heightPx: 3, rotate: 90, color: 'bg-gray-400' },
-    { topPx: 108, leftPx: 46, widthPx: 750, heightPx: 3, rotate: 90, color: 'bg-gray-400' },
-    { topPx: 485, leftPx: 1650, widthPx: 372, heightPx: 3, rotate: 90, color: 'bg-gray-400' },
-    { topPx: 110, leftPx: 553, widthPx: 220, heightPx: 3, rotate: 90, color: 'bg-gray-400' },
+    { topPx: 270, leftPx: 1250, widthPx: 275, heightPx: 3, rotate: 90, color: 'bg-black' },
+    { topPx: 108, leftPx: 46, widthPx: 750, heightPx: 3, rotate: 90, color: 'bg-black' },
+    { topPx: 485, leftPx: 1650, widthPx: 372, heightPx: 3, rotate: 90, color: 'bg-black' },
+    { topPx: 110, leftPx: 553, widthPx: 220, heightPx: 3, rotate: 90, color: 'bg-black' },
   ];
 
   useEffect(() => {
@@ -69,7 +69,7 @@ const Index = () => {
 
           {/* Center */}
           <div className="space-y-1 max-w-[400px]">
-            <h2 className="text-3xl md:text-2xl w-[400px] font-normal">Vision</h2>
+            <h2 className="text-3xl md:text-2xl w-[400px] font-normal">Perspective</h2>
             <p className="text-sm md:text-base text-gray-500 leading-snug">
               I pursue digital communication design that connects the contexts of everyday life.
               With an integrative mindset and flexible, experimental perspective, I strive to present creative visual solutions.
