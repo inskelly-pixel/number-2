@@ -48,8 +48,8 @@ export const projects = [
     images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762536373/7001_s661ft.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762536376/7002_jszoap.svg"],
     icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], // 상단 아이콘
     category: "Editorial design",
-    description: "『700-08』 is a book that analyzes the art book collection of Ewha Womans University’s Central Library from a bibliographic classification perspective.", 
-    description2: "The title refers to the shelf number assigned to art books, focusing particularly on those classified between 700 and 708, where noticeable changes in paper quality and materiality appear.",
+    description: "『700-08』 is a book that analyzes the art book collection of Ewha Womans University’s Central Library from a bibliographic classification perspective. The title refers to the shelf number assigned to art books, focusing particularly on those classified between 700 and 708, where noticeable changes in paper quality and materiality appear. To document the physical", 
+    description2: "transformation of aged paper—such as discoloration, wear, and binding marks—I scanned each book spine and reorganized the images according to temporal characteristics to construct a visual stratigraphic structure. This process revealed the visual gap between the material continuity of aging and the momentary nature of digital capture, highlighting the potential of digital tools to reinterpret temporal continuity.",
     textSets: [
     {
       title: "",
@@ -517,8 +517,8 @@ export const projectsKo: Projectsko[] = [
     script: "",
     script2: "개인 프로젝트 / 290x290mm, 200g 1도 인쇄",
     category: "편집 디자인",
-    description3: "『700-08』은 이화여자대학교의 중앙도서관 예술 서적을 층서학적인 관점에서 분석하는 책입니다. 해당 제목은 예술 서적의 서고 번호를 가리키며 비교적 책 종이의 변화가 뚜렷하게 나타난 700번부터 08번까지의 책들을 중점적으로 다루었습니다.",
-    description4: "책에 대한 물성적 변화에 대한 인포그래픽을 제작하고, 이를 형태가 변화해온 지질과 같이 시각화하여 부드럽고, 단단한 책의 면모를 표현합니다.",
+    description3: "『700-08』은 이화여자대학교의 중앙도서관 예술 서적을 층서학적인 관점에서 분석하는 책입니다. 해당 제목은 예술 서적의 서고 번호를 가리키며 비교적 책 종이의 변화가 뚜렷하게 나타난 700번부터 08번까지의 책들을 중점적으로 다루었습니다. 오래된 종이의 물리적 변형(변색, 마모, 제본",
+    description4: "흔적)을 수집하기 위해 책배 단위로 스캔을 수행했습니다. 이를 다시 시간성 단위로 재정렬하여 시각 지층 구조를 만들었고, 물성의 연속성과 스캐닝의 순간성 사이의 시차가 시각적으로 드러남을 확인했습니다. 이를 통해 디지털 도구가 시간적 연속성을 재해석할 수 있다는 가능성을 탐구했습니다.",
     description5: "한글",
     icons: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529352/goldicon1_agj4jm.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762529356/goldicon2_r4fkk2.svg"], 
     images: ["https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762536373/7001_s661ft.svg", "https://res.cloudinary.com/dy9kxmf9g/image/upload/v1762536376/7002_jszoap.svg"],
