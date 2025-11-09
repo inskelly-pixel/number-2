@@ -93,7 +93,7 @@ const ProjectDetail = () => {
             return (
               <div
                 key={tsIndex}
-                className="absolute flex flex-col items-start p-3 text-sm rounded-lg z-50"
+                className="absolute flex flex-col items-start p-3 text-base rounded-lg z-50"
                 style={{
                   top: textSet.position?.top,
                   left: textSet.position?.left,
